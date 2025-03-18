@@ -1,0 +1,13 @@
+.modal.show {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding-right: 0px !important;
+}
+
+.modal-open {
+  padding-right: 0px !important;
+}
+
+.modal-header .close {
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=modal.css.map */

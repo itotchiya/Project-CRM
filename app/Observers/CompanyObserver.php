@@ -766,7 +766,7 @@ class CompanyObserver
 
     public function themeSetting($company): void
     {
-        $headerColor = '#1d82f5';
+        $headerColor = '$purple';
         $sidebarColor = '#171F29';
         $sidebarTextColor = '#99A5B5';
         $linkColor = '#F7FAFF';

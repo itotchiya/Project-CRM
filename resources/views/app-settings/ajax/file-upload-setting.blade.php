@@ -22,7 +22,7 @@
     }
 
     .tags-look .tagify__dropdown__item:hover {
-        background: var(--header_color);
+        background: $purple;
     }
 
     #datatable {

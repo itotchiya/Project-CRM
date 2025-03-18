@@ -221,7 +221,7 @@ use Illuminate\Support\Facades\Schema;
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Ticket[] $tickets
  * @property-read int|null $tickets_count
  * @method static \Illuminate\Database\Eloquent\Builder|Company whereYearStartsFrom($value)
- * @property string $header_color
+ * @property string $purple
  * @property int $datatable_row_limit
  * @property int $show_new_webhook_alert
  * @property string|null $pm_type

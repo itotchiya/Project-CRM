@@ -21,16 +21,16 @@
 
     /* Hover state of the stars */
     .rating-stars ul>li.star.hover>i.fa {
-        color: var(--header_color);
+        color: $purple;
     }
 
     /* Selected state of the stars */
     .rating-stars ul>li.star.selected>i.fa {
-        color: var(--header_color);
+        color: $purple;
     }
 
     .selected {
-        color: var(--header_color);
+        color: $purple;
     }
 
 </style>

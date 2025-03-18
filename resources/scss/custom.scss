@@ -102,7 +102,7 @@ body.dark-theme {
 }
 .select2-container--default
     .select2-results__option--highlighted[aria-selected] {
-    background-color: $blue;
+    background-color: $purple;
     color: $white;
 }
 .select2-container--default
@@ -387,7 +387,7 @@ ul.thumbnails.image_picker_selector li .thumbnail {
 }
 
 ul.thumbnails.image_picker_selector li .thumbnail.selected {
-    background: $blue !important;
+    background: $purple !important;
 }
 
 .pr-20 {
@@ -424,7 +424,7 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
 
 .punch-hours {
     align-items: center;
-    border: 5px solid $blue;
+    border: 5px solid $purple;
     border-radius: 50%;
     display: flex;
     font-size: 18px;
@@ -490,7 +490,7 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
     height: 10px;
     left: -15px;
     top: 6px;
-    border: 2px solid $blue;
+    border: 2px solid $purple;
     margin-right: 15px;
     z-index: 2;
     background: #fff;
@@ -1042,7 +1042,7 @@ input[type="number"] {
 
 #terms_link {
     display: contents !important;
-    color:#007bff !important;
+    color:$purple !important;
     font-size: 15px;
 }
 

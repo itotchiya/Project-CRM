@@ -78,7 +78,7 @@
     // -moz-user-select: none;
     // -ms-user-select: none;
     user-select: none;
-    color: $blue;
+    color: $purple;
     color: #28313c;
     align-items: center;
     justify-content: center;
@@ -94,7 +94,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    border: solid 2px #1d82f5;
+    border: solid 2px $purple;
     background-color: $white;
 
     &:after{
@@ -146,24 +146,24 @@
 }
 
 .form_custom_label input:checked ~ .checkmark {
-  background-color: #1d82f5;
+  background-color: $purple;
 }
 .form_custom_label input:checked ~ .checkmark:after {
   display: block;
 }
 
 // .custom-control-label::before{
-//     border:#1d82f5 solid 2px;
+//     border:$purple solid 2px;
 // }
 
 .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color :#1d82f5;
-    background-color: #1d82f5;
+    border-color :$purple;
+    background-color: $purple;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before{
-  box-shadow: 0 0 0 0.2rem #1d82f529;
+  box-shadow: 0 0 0 0.2rem $purple 29;
 }
 
 /*********** DROPDOWN *************/
@@ -223,12 +223,12 @@
     background :#f2f4f7;
 }
 .qs-current {
-    background: #1d82f5;
+    background: $purple;
     color: #fff;
     text-decoration: none;
 
     &:hover{
-      background: #1d82f5 !important;
+      background: $purple !important;
     }
 }
 .qs-active, .qs-range-end, .qs-range-start {

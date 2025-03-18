@@ -152,7 +152,7 @@ class IncomeVsExpenseReportController extends AccountBaseController
         $data['values'][] = $graphData->pluck('b');
         $data['totalEarning'] = $graphData->sum('a');
         $data['totalExpense'] = $graphData->sum('b');
-        $data['colors'] = ['#1D82F5', '#d30000'];
+        $data['colors'] = ['$purple', '#d30000'];
         $data['name'][] = __('app.income');
         $data['name'][] = __('app.expense');
 

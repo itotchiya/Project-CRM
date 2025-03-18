@@ -168,7 +168,7 @@ trait HRDashboard
         }
 
         $data['values'] = $genderWiseEmployee->pluck('totalEmployee')->toArray();
-        $data['colors'] = ['#1d82f5', '#FCBD01', '#D30000'];
+        $data['colors'] = ['$purple', '#FCBD01', '#D30000'];
 
         return $data;
     }
@@ -341,7 +341,7 @@ trait HRDashboard
         $data['labels'] = $graphData->pluck('y');
         $data['values'][] = $graphData->pluck('a');
         $data['values'][] = $graphData->pluck('b');
-        $data['colors'] = ['#1D82F5', '#d30000'];
+        $data['colors'] = ['$purple', '#d30000'];
         $data['name'][] = __('app.joining');
         $data['name'][] = __('app.attrition');
 

@@ -1,0 +1,12 @@
+.avatar-img {
+  width: 25px;
+  height: 25px;
+  border: solid 1px #707070;
+  overflow: hidden;
+}
+.avatar-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 25px;
+  height: 25px;
+}/*# sourceMappingURL=avatar.css.map */

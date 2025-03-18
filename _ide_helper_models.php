@@ -4536,7 +4536,7 @@ namespace App\Models{
  *
  * @property int $id
  * @property string $panel
- * @property string $header_color
+ * @property string $purple
  * @property string $sidebar_color
  * @property string $sidebar_text_color
  * @property string $link_color

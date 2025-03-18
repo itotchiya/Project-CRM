@@ -24,7 +24,7 @@ class EventFactory extends Factory
     {
         return [
             'event_name' => fake()->text(20),
-            'label_color' => fake()->randomElement(['#1d82f5', '#800080', '#808000', '#008000', '#0000A0', '#000000']),
+            'label_color' => fake()->randomElement(['$purple', '#800080', '#808000', '#008000', '#0000A0', '#000000']),
             'where' => fake()->address,
             'description' => fake()->paragraph,
             'start_date_time' => $start = fake()->randomElement([fake()->dateTimeThisMonth(), fake()->dateTimeThisYear()]),

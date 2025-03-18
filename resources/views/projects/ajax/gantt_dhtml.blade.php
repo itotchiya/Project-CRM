@@ -70,15 +70,15 @@ $editTaskPermission = ($project->project_admin == user()->id) ? 'all' : user()->
         }
 
         .gantt_task_link .gantt_line_wrapper div{
-            background-color: var(--header_color) !important;
+            background-color: $purple !important;
         }
 
         .gantt_link_arrow_right {
-            border-left-color:  var(--header_color);
+            border-left-color:  $purple;
         }
         
         .gantt_link_arrow_left {
-            border-right-color:  var(--header_color);
+            border-right-color:  $purple;
         }
 
         .gantt_project .gantt_link_control, .gantt_milestone .gantt_link_control {

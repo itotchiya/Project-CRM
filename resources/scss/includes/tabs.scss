@@ -9,7 +9,7 @@
         border: 0px;
 
         &:hover{
-            border-bottom: 3px solid #1d82f585;
+            border-bottom: 3px solid $purple 85;
         }
 
         @include media-breakpoint-down(sm){
@@ -18,7 +18,7 @@
     }
 
     .nav-link.active, .nav-item.show .nav-link{
-        border-bottom: 3px solid #1D82F5;
+        border-bottom: 3px solid $purple;
         border-top: 0px;
         border-left: 0px;
         border-right: 0px;

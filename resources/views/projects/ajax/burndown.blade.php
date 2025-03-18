@@ -72,8 +72,8 @@
                 datasets: [
                     {
                         label: "@lang('modules.burndown.actual')",
-                        borderColor: "#1d82f5",
-                        backgroundColor: "#1d82f5",
+                        borderColor: "$purple",
+                        backgroundColor: "$purple",
                         lineTension: 0,
                         borderDash: [5, 5],
                         fill: false,

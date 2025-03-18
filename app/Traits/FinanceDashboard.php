@@ -173,7 +173,7 @@ trait FinanceDashboard
         $data['values'][] = $allInvoice->filter(function ($value, $key) {
             return $value->status == 'draft';
         })->count();
-        $data['colors'][] = '#1d82f5';
+        $data['colors'][] = '$purple';
 
         $data['values'][] = $allInvoice->filter(function ($value, $key) {
             return $value->send_status == 0;
@@ -216,7 +216,7 @@ trait FinanceDashboard
         $data['values'][] = $allEstimate->filter(function ($value, $key) {
             return $value->status == 'draft';
         })->count();
-        $data['colors'][] = '#1d82f5';
+        $data['colors'][] = '$purple';
 
         $data['values'][] = $allEstimate->filter(function ($value, $key) {
             return $value->send_status == 0;
@@ -279,7 +279,7 @@ trait FinanceDashboard
         $data['values'][] = $allProposal->filter(function ($value, $key) {
             return $value->invoice_convert == 1;
         })->count();
-        $data['colors'][] = '#1d82f5';
+        $data['colors'][] = '$purple';
 
         $data['labels'] = [__('modules.dashboard.proposalWaiting'), __('modules.dashboard.proposalDeclined'), __('modules.dashboard.proposalExpired'), __('modules.dashboard.proposalAccepted'), __('modules.dashboard.proposalConverted')];
 

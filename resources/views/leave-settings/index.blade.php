@@ -7,7 +7,7 @@
         }
 
         .nav-tabs .nav-link.active {
-            border-bottom: 2px solid var(--header_color) !important;
+            border-bottom: 2px solid $purple !important;
         }
 
         .nav-tabs .nav-link {

@@ -18,7 +18,7 @@ return new class extends Migration {
             DB::statement("ALTER TABLE file_storage CHANGE COLUMN storage_location storage_location ENUM('local', 'aws_s3', 'digitalocean','wasabi') NOT NULL DEFAULT 'local'");
 
             Schema::table('global_settings', function (Blueprint $table) {
-                $table->string('header_color')->after('logo_background_color')->default('#1D82F5');
+                $table->string('header_color')->after('logo_background_color')->default('$purple');
                 $table->string('hash')->after('locale')->nullable();
             });
 
@@ -31,7 +31,7 @@ return new class extends Migration {
 
 
             Schema::table('companies', function (Blueprint $table) {
-                $table->string('header_color')->after('logo_background_color')->default('#1D82F5');
+                $table->string('header_color')->after('logo_background_color')->default('$purple');
             });
 
             Schema::table('payment_gateway_credentials', function (Blueprint $table) {

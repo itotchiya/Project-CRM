@@ -682,7 +682,7 @@ class ClientController extends AccountBaseController
         // Define labels, translations, and colors
         $labels = ['paid', 'unpaid', 'partial', 'canceled', 'draft'];
         $translations = [__('app.paid'), __('app.unpaid'), __('app.partial'), __('app.canceled'), __('app.draft')];
-        $colors = ['#2CB100', '#FCBD01', '#1d82f5', '#D30000', '#616e80'];
+        $colors = ['#2CB100', '#FCBD01', '$purple', '#D30000', '#616e80'];
 
         // Construct the query to count invoices for each status
         $query = Invoice::selectRaw('COUNT(*) as count, status')

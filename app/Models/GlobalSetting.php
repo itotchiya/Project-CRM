@@ -165,7 +165,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static \Illuminate\Database\Eloquent\Builder|GlobalSetting whereMomentDateFormat($value)
  * @method static \Illuminate\Database\Eloquent\Builder|GlobalSetting whereRtl($value)
  * @method static \Illuminate\Database\Eloquent\Builder|GlobalSetting whereShowUpdatePopup($value)
- * @property string $header_color
+ * @property string $purple
  * @property string|null $hash
  * @property string|null $last_license_verified_at
  * @property int $datatable_row_limit

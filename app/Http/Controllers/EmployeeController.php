@@ -937,7 +937,7 @@ class EmployeeController extends AccountBaseController
     {
         $labels = ['open', 'pending', 'resolved', 'closed'];
         $data['labels'] = [__('app.open'), __('app.pending'), __('app.resolved'), __('app.closed')];
-        $data['colors'] = ['#D30000', '#FCBD01', '#2CB100', '#1d82f5'];
+        $data['colors'] = ['#D30000', '#FCBD01', '#2CB100', '$purple'];
         $data['values'] = [];
 
         foreach ($labels as $label) {

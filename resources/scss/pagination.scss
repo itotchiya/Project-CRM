@@ -1,5 +1,5 @@
 .pagination .page-item.active .page-link{
-    background-color: $blue;
+    background-color: $purple;
 }
 .pagination li{
   margin-right: 8px;
@@ -23,8 +23,8 @@
 
 }
 .page-item.active .page-link {
-    background-color: $blue;
-    border-color: $blue;
+    background-color: $purple;
+    border-color: $purple;
 
     &:hover, &:focus{
       color: #fff !important;

@@ -218,11 +218,11 @@
         $('.image-picker').imagepicker();
 
         $('.header_color').on('change', function (e) {
-            document.documentElement.style.setProperty('--header_color', e.target.value);
+            document.documentElement.style.setProperty('$purple', e.target.value);
         });
 
         $('#reset-colors').click(function () {
-            $('.header_color').val('#1d82f5');
+            $('.header_color').val('$purple');
             $('.sidebar_theme .custom-control-input').val('dark');
             $('.auth_theme .custom-control-input .auth_theme_text').val('light');
             $('#logo_background_color').val('#FFFFFF');

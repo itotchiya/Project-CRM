@@ -96,7 +96,7 @@ trait TicketDashboard
             ->pluck('totalTicket', 'status'); // Use pluck for efficient data retrieval
 
         $data['colors'] = [
-            'closed' => '#1d82f5', // Predefined color mapping
+            'closed' => '$purple', // Predefined color mapping
             'pending' => '#FCBD01',
             'resolved' => '#2CB100',
             'open' => '#D30000',

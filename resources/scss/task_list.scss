@@ -71,7 +71,7 @@
     position: absolute;
     left: -55px;
     top: 17px;
-    background-color: #1D82F5;
+    background-color: $purple;
     padding: 9px 17px !important;
     color: #fff;
     border-radius: 22px 0px 0px 22px;
@@ -91,7 +91,7 @@
     span{
           width: 20px;
           height: 20px;
-          border: 1px solid #1D82F5;
+          border: 1px solid $purple;
           border-radius: 100%;
           position: relative;
           display: block;
