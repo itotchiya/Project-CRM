@@ -88,7 +88,7 @@ body.dark-theme{
     }
     .page-item.disabled .page-link, .pagination li a{
         background-color: #29304c;
-        border-color: #80808064; /* changed from #4B4E69 to #80808064 - Surface card divider color and tables divider */
+        border-color: #80808064; 
     }
     .filter-box .select-box .bootstrap-select .dropdown-toggle, .filter-box .select-box .bootstrap-select .btn-light:not(:disabled):not(.disabled):active, .filter-box .select-box .bootstrap-select .btn-light:not(:disabled):not(.disabled).active, .btn:hover, .message_wrapper .msg-content-right .chat-box .card:hover p{
         color: #9c9fa6 !important;

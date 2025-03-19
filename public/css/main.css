@@ -1004,39 +1004,6 @@
 }
 
 @charset "UTF-8";
-/*!--
-
-TEMPLATE NAME: Bootbox - Agency HTML Template
-TEMPLATE URI: - https://bootbox.froid.works/src/index.html
-DESCRIPTION: Bootbox Agency HTML Template is crafted carefully and with love which can bring attentions to your client to make things working good for your business.
-VERSION: 1.0.1
-AUTHOR: Ajay Kumar Choudhary
-AUTHOR URL: https://themeforest.net/user/ajay138/
-
-[TABLE OF CONTENTS]
-
-1.0 Custom Variables
-2.0 Variable Reset, Bootstrap mixins & Functions
-3.0 Common CSS
-    3.1 Nav
-    3.1 Header
-    3.1 Footer
-4.0 Page CSS
-    4.1 Home
-    4.2 About
-    4.3 Price
-    4.4 Blog
-    4.5 Contact
-    4.6 Error
-    4.7 Login
-    4.8 FAQ
-    4.9 Careers
-5.0 Reset
-6.0 Custom
-7.0 Animations
-8.0 Customizer Styles
-
---*/
 /************************ DASHBOARD UI KIT ***********************/
 /*!
  * Bootstrap v4.6.2 (https://getbootstrap.com/)
@@ -6944,7 +6911,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #007bff !important;
+  background-color: var(--purple) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -14779,6 +14746,23 @@ select.selectpicker {
   font-style: normal;
   font-display: swap;
 }
+
+
+/**************** Dark Mode - dyal UX designer ****************/
+
+body.dark-theme .bg-white {
+  background-color: #302C49 !important; /* I added this class and set a background to the card component, tables and top header mohim dyal cards o top header ochi l3ibat khfaf */
+}
+
+body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown, body.dark-theme .dropdown-menu {
+  background-color: #302C49 !important; /* I added this class and set a background to the dropdown menu in the sidebar */
+}
+
+body.dark-theme .main-container {
+  background-color: #232038 !important; /* I added this class and set a background to the main container - li ana kansmiha main background dyal dashboard */
+}
+
+
 body.dark-theme {
   background-color: #282227; /* changed from #181c34 to #282227 - Main Background color for the dark theme */
 }
@@ -17053,8 +17037,10 @@ button.disabled, button:disabled {
   background-color: #2CB100;
 }
 
+/**************** Light Mode - dyal UX designer ****************/
+
 .bg-additional-grey {
-  background-color: #F2F4F7;
+  background-color: #F4F2FC; /* I changed #F2F4F7 to #F4F2FC - hadi hiya the main background dyal light mode */
 }
 
 .bg-amt-grey {
@@ -17313,7 +17299,6 @@ div.dataTables_wrapper div.dataTables_info {
 .card-horizontal {
   display: flex;
   flex: 1 1 auto;
-  background-color: #232323; /* changed from #fff to #232323 - Surface card background */
 }
 
 .card-img {
@@ -19283,7 +19268,7 @@ body.dark-theme .bg-dark, body.dark-theme .qs-controls, body.dark-theme .dropdow
   background-color: #29304C !important;
 }
 body.dark-theme .bg-white, body.dark-theme .card, body.dark-theme .form-control, body.dark-theme .qs-datepicker-container, body.dark-theme .qs-overlay, body.dark-theme .unpaid, body.dark-theme .custom-file-label, body.dark-theme .p-client-msg .btn-secondary, body.dark-theme .w-task-board-panel, body.dark-theme .b-p-header .b-p-badge, body.dark-theme .content-wrapper, body.dark-theme .admin-dashboard, body.dark-theme .page-title, body.dark-theme .main-container, body.dark-theme .settings-box, body.dark-theme .input-group .bootstrap-select.form-control .dropdown-toggle, body.dark-theme .bootstrap-select > .dropdown-toggle, body.dark-theme .bootstrap-timepicker-widget table td a:hover, body.dark-theme .btn-cancel, body.dark-theme .select-picker.role-permission-select, body.dark-theme .fc .fc-button-primary, body.dark-theme .daterangepicker td.off, body.dark-theme .dropzone, body.dark-theme textarea, body.dark-theme iframe .form-body, body.dark-theme .tabs .-secondary, body.dark-theme .set-btns, body.dark-theme .list-group-item, body.dark-theme .bg-light, body.dark-theme .bg-grey, body.dark-theme .dropzone .dz-preview.dz-image-preview, body.dark-theme .c-inv-desc select, body.dark-theme .bg-light-grey, body.dark-theme .matched .sample {
-  background-color: #181C34 !important;
+  background-color: none !important; /* changed from #181C34 to none - Surface card background hadi asidi background dyal card component f origin kano daro lih color dyal background o daro lih border */
 }
 body.dark-theme .text-dark, body.dark-theme .text-dark-grey, body.dark-theme .text-darkest-grey, body.dark-theme .table tr td, body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown .profile-box a, body.dark-theme .qs-datepicker-container, body.dark-theme .qs-day, body.dark-theme .table tr td a, body.dark-theme .tabs .nav .nav-item, body.dark-theme .login_box h3, body.dark-theme .login_header h3, body.dark-theme .form-control, body.dark-theme .forgot_pswd a, body.dark-theme .login_box .form-group label, body.dark-theme .page-item.disabled .page-link, body.dark-theme .pagination li a, body.dark-theme .dropdown-item, body.dark-theme a:hover, body.dark-theme .filter-option-inner-inner, body.dark-theme .badge-light, body.dark-theme .bootstrap-timepicker-widget table td a, body.dark-theme .ql-snow .ql-picker, body.dark-theme .ql-snow .ql-stroke, body.dark-theme .form_custom_label, body.dark-theme .dropdown-menu.datepicker-dropdown, body.dark-theme .select-picker.role-permission-select, body.dark-theme .tagify__tag > div > *, body.dark-theme .tagify__tag__removeBtn, body.dark-theme .dropdown-menu.dashboard-settings, body.dark-theme .daterangepicker td.in-range, body.dark-theme .text-muted, body.dark-theme .input-group-text, body.dark-theme .bootstrap-select .dropdown-toggle::after, body.dark-theme .btn-primary:hover .text-white, body.dark-theme .fc .fc-col-header-cell-cushion, body.dark-theme .swal2-title, body.dark-theme .swal2-content, body.dark-theme .login_box a, body.dark-theme .bg-grey, body.dark-theme .bg-grey span, body.dark-theme .desktop-description, body.dark-theme .item_name, body.dark-theme .quantity, body.dark-theme .cost_per_item, body.dark-theme .ticket-message:hover p {
   color: #D5D8DF !important;
@@ -19314,7 +19299,7 @@ body.dark-theme .b-shadow-4, body.dark-theme .qs-datepicker-container, body.dark
   border: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown, body.dark-theme .dropdown-menu, body.dark-theme .add-client, body.dark-theme .modal-content, body.dark-theme input, body.dark-theme tbody, body.dark-theme .message_wrapper .msg-content-right .mbl-sender-name, body.dark-theme .more-filters .more-filter-tab, body.dark-theme .daterangepicker {
-  background-color: #181C34;
+  background-color: none !important; /* changed from #181C34 to none - Surface surface card background background dyal table ola chi haja dakhl f card */
   border: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .modal.show {
@@ -19356,7 +19341,7 @@ body.dark-theme .daterangepicker .calendar-table {
 }
 body.dark-theme .page-item.disabled .page-link, body.dark-theme .pagination li a {
   background-color: #29304c;
-  border-color: rgba(128, 128, 128, 0.3921568627); /* changed from #4B4E69 to #80808064 - Surface card divider color and tables divider */
+  border-color: rgba(128, 128, 128, 0.3921568627);
 }
 body.dark-theme .filter-box .select-box .bootstrap-select .dropdown-toggle, body.dark-theme .filter-box .select-box .bootstrap-select .btn-light:not(:disabled):not(.disabled):active, body.dark-theme .filter-box .select-box .bootstrap-select .btn-light:not(:disabled):not(.disabled).active, body.dark-theme .btn:hover, body.dark-theme .message_wrapper .msg-content-right .chat-box .card:hover p {
   color: #9c9fa6 !important;

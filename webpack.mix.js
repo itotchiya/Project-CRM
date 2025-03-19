@@ -36,6 +36,6 @@ mix.js('resources/js/bootstrap.js', 'public/js')
     'resources/js/main.js',
     'resources/js/custom.js'
 ], 'public/js/main.js')
-.sass('resources/scss/main.scss', 'public/css')
+/*.sass('resources/scss/main.scss', 'public/css')*/ /* hna asidi fin tafi dak l MIX */
 .options({processCssUrls: false})
 .sourceMaps(true, 'source-map')

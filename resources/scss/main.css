@@ -1,37 +1,4 @@
 @charset "UTF-8";
-/*!--
-
-TEMPLATE NAME: Bootbox - Agency HTML Template
-TEMPLATE URI: - https://bootbox.froid.works/src/index.html
-DESCRIPTION: Bootbox Agency HTML Template is crafted carefully and with love which can bring attentions to your client to make things working good for your business.
-VERSION: 1.0.1
-AUTHOR: Ajay Kumar Choudhary
-AUTHOR URL: https://themeforest.net/user/ajay138/
-
-[TABLE OF CONTENTS]
-
-1.0 Custom Variables
-2.0 Variable Reset, Bootstrap mixins & Functions
-3.0 Common CSS
-    3.1 Nav
-    3.1 Header
-    3.1 Footer
-4.0 Page CSS
-    4.1 Home
-    4.2 About
-    4.3 Price
-    4.4 Blog
-    4.5 Contact
-    4.6 Error
-    4.7 Login
-    4.8 FAQ
-    4.9 Careers
-5.0 Reset
-6.0 Custom
-7.0 Animations
-8.0 Customizer Styles
-
---*/
 /************************ DASHBOARD UI KIT ***********************/
 /*!
  * Bootstrap v4.6.2 (https://getbootstrap.com/)
@@ -302,7 +269,6 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-  appearance: button; /* added for standard compatibility */
 }
 
 button:not(:disabled),
@@ -362,7 +328,6 @@ progress {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: none;
-  appearance: none; /* added for standard compatibility */
 }
 
 [type=search]::-webkit-search-decoration {
@@ -4218,10 +4183,10 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #232323; /* changed from #fff to #232323 - Surface card background */
+  background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(18, 18, 18, 0.125);
-  border-radius: none; /* removed border-radius - Surface card Border Radius */
+  border-radius: 0.25rem;
 }
 .card > hr {
   margin-right: 0;
@@ -4578,11 +4543,11 @@ a.badge:hover, a.badge:focus {
 
 .badge-primary {
   color: #fff;
-  background-color: #685BC6; /* changed from #007bff to #685BC6 - Variable from variables.scss $purple */
+  background-color: #007bff;
 }
 a.badge-primary:hover, a.badge-primary:focus {
   color: #fff;
-  background-color: #4538A3; /* changed from #0062CC to #4538A3 - Variable from variables.scss $purple little darker */
+  background-color: #0062cc;
 }
 a.badge-primary:focus, a.badge-primary.focus {
   outline: 0;
@@ -5943,7 +5908,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #000 !important;
+  background-color: #007bff !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6023,7 +5988,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #fff !important; /* changed from #fff to #232323 - Surface card background */
+  background-color: #fff !important;
 }
 
 .bg-transparent {
@@ -6111,7 +6076,7 @@ button.bg-dark:focus {
 }
 
 .rounded {
-  border-radius: none !important; /* removed border-radius - Surface card Border Radius - including some other components like buttons */
+  border-radius: 0.25rem !important;
 }
 
 .rounded-top {
@@ -9860,7 +9825,7 @@ h6 a {
   font-family: "dropify";
   font-style: normal;
   font-weight: normal;
-  /* speak: none; */  /* removed speak */
+  speak: none;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -13779,16 +13744,16 @@ select.selectpicker {
   font-display: swap;
 }
 body.dark-theme {
-  background-color: #181c34;
+  background-color: #282227; /* changed from #181c34 to #282227 - Main Background color for the dark theme */
 }
 body.dark-theme .preloader-container,
 body.dark-theme .bg-additional-grey {
-  background-color: #282227;  /* changed from #181c34 to #282227 - Main Background color for the dark theme */
+  background-color: #282227; /* changed from #181c34 to #282227 - Main Background color for the dark theme */
 }
 
 .dropify-wrapper {
   border-radius: none; /* removed border-radius - Surface card Border Radius */
-  border: 1px solid #e8eef3;
+  border: 0.6px solid rgba(128, 128, 128, 0.3921568627); /* changed from 1px solid #e8eef3 to 0.6px solid #80808064 - Surface card divider color and tables divider */
   z-index: 0;
 }
 
@@ -13801,7 +13766,7 @@ body.dark-theme .bg-additional-grey {
 /*********** CUSTOM SELECT *************/
 .select2-container--default .select2-selection--single {
   border: 1px solid #e8eef3;
-  border-radius: none; /* removed border-radius -  Border Radius */
+  border-radius: 3px;
   height: 35px;
 }
 
@@ -14379,7 +14344,6 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
-  appearance: textfield; /* added for standard compatibility */
 }
 
 @media (max-width: 991.98px) {
@@ -15956,12 +15920,9 @@ button.disabled, button:disabled {
   color: #131523;
 }
 
-/* .typography_and_elements { 
- 
-} */
-
- /****************** UI ELEMENTS **********************/
-
+.typography_and_elements {
+  /****************** UI ELEMENTS **********************/
+}
 .typography_and_elements .typo_font p {
   font-size: 13px;
   line-height: 1.15;
@@ -16316,8 +16277,6 @@ div.dataTables_wrapper div.dataTables_info {
 .card-horizontal {
   display: flex;
   flex: 1 1 auto;
-  background-color: #232323; /* changed from #fff to #232323 - Surface card background */
-
 }
 
 .card-img {
@@ -16470,7 +16429,7 @@ table.dataTable {
 }
 .message_wrapper .msg-header {
   height: 62px;
-  border-bottom: 0.6px solid #80808064; /* changed from 1px solid #e8eef3 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border-bottom: 1px solid #e8eef3;
 }
 .message_wrapper .msg-header .msg-header-left {
   padding: 0px 1.25rem;
@@ -16524,7 +16483,6 @@ table.dataTable {
 .message_wrapper .msg-content-left .card-body .card-text {
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  line-clamp: 2; /* Added standard property for compatibility */
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 1.62;
@@ -17503,7 +17461,7 @@ table {
     height: auto;
   }
   .project-right .bg-white {
-    border-radius: none; /* removed border-radius - Surface card Border Radius */
+    border-radius: 4px;
   }
 }
 .project-right .p-activity-heading span {
@@ -18287,11 +18245,9 @@ body.dark-theme .border-0, body.dark-theme .settings-sidebar input, body.dark-th
 body.dark-theme .bg-dark, body.dark-theme .qs-controls, body.dark-theme .dropdown-item:hover, body.dark-theme .dropdown-item:focus, body.dark-theme .task_view .task_view_more:hover, body.dark-theme .task_view .taskView:hover, body.dark-theme .project-menu.in, body.dark-theme .bg-amt-grey, body.dark-theme .e-d-tasks-projects-events .bg-grey, body.dark-theme .cal-info .bg-light-grey, body.dark-theme .inv-num-date .bg-light-grey, body.dark-theme .inv-detail .bg-light-grey, body.dark-theme .message_wrapper .msg-content-left .tablinks.active, body.dark-theme .message_wrapper .msg-content-left .card:hover, body.dark-theme .project-right .p-activity-heading span, body.dark-theme .settings-sidebar li.active, body.dark-theme .board-panel, body.dark-theme .w-task-board-panel .minimized, body.dark-theme .task-search .input-group-text, body.dark-theme .ticket-msg .card-horizontal.bg-white-shade, body.dark-theme .bg-white-shade.ticket-contact-owner, body.dark-theme .dark_place .input-group-text, body.dark-theme .login_section, body.dark-theme .daterangepicker .ranges li:hover, body.dark-theme .daterangepicker td.off.in-range, body.dark-theme .daterangepicker td.off.start-date, body.dark-theme .table .thead-light th, body.dark-theme .badge-light, body.dark-theme .datepicker .datepicker-switch:hover, body.dark-theme .datepicker .next:hover, body.dark-theme .datepicker .prev:hover, body.dark-theme .datepicker tfoot tr th:hover, body.dark-theme .datepicker table tr td.day:hover, body.dark-theme .datepicker table tr td.focused, body.dark-theme .tagify__tag > div, body.dark-theme .tagify__tag__removeBtn, body.dark-theme .fc-button.fc-button-primary.fc-button-active, body.dark-theme .fc-day-today, body.dark-theme .in-range.available, body.dark-theme .daterangepicker td.available:hover, body.dark-theme .daterangepicker th.available:hover, body.dark-theme .dropify-wrapper .dropify-preview, body.dark-theme .dropify-wrapper, body.dark-theme .bg-white-shade, body.dark-theme .input-group-text, body.dark-theme .progress, body.dark-theme .swal2-popup, body.dark-theme .main-sidebar, body.dark-theme .create-inv .bg-light-gre, body.dark-theme .unmatched .sample, body.dark-theme .fc .fc-cell-shaded, body.dark-theme .fc .fc-list-event:hover td, body.dark-theme .fc .fc-event:hover td {
   background-color: #29304C !important;
 }
-/*
 body.dark-theme .bg-white, body.dark-theme .card, body.dark-theme .form-control, body.dark-theme .qs-datepicker-container, body.dark-theme .qs-overlay, body.dark-theme .unpaid, body.dark-theme .custom-file-label, body.dark-theme .p-client-msg .btn-secondary, body.dark-theme .w-task-board-panel, body.dark-theme .b-p-header .b-p-badge, body.dark-theme .content-wrapper, body.dark-theme .admin-dashboard, body.dark-theme .page-title, body.dark-theme .main-container, body.dark-theme .settings-box, body.dark-theme .input-group .bootstrap-select.form-control .dropdown-toggle, body.dark-theme .bootstrap-select > .dropdown-toggle, body.dark-theme .bootstrap-timepicker-widget table td a:hover, body.dark-theme .btn-cancel, body.dark-theme .select-picker.role-permission-select, body.dark-theme .fc .fc-button-primary, body.dark-theme .daterangepicker td.off, body.dark-theme .dropzone, body.dark-theme textarea, body.dark-theme iframe .form-body, body.dark-theme .tabs .-secondary, body.dark-theme .set-btns, body.dark-theme .list-group-item, body.dark-theme .bg-light, body.dark-theme .bg-grey, body.dark-theme .dropzone .dz-preview.dz-image-preview, body.dark-theme .c-inv-desc select, body.dark-theme .bg-light-grey, body.dark-theme .matched .sample {
-  background-color: #00E073 !important; /* this change the Main Background color for the dark theme -- Removed Background color for the dark theme 
+  background-color: #181C34 !important;
 }
-*/
 body.dark-theme .text-dark, body.dark-theme .text-dark-grey, body.dark-theme .text-darkest-grey, body.dark-theme .table tr td, body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown .profile-box a, body.dark-theme .qs-datepicker-container, body.dark-theme .qs-day, body.dark-theme .table tr td a, body.dark-theme .tabs .nav .nav-item, body.dark-theme .login_box h3, body.dark-theme .login_header h3, body.dark-theme .form-control, body.dark-theme .forgot_pswd a, body.dark-theme .login_box .form-group label, body.dark-theme .page-item.disabled .page-link, body.dark-theme .pagination li a, body.dark-theme .dropdown-item, body.dark-theme a:hover, body.dark-theme .filter-option-inner-inner, body.dark-theme .badge-light, body.dark-theme .bootstrap-timepicker-widget table td a, body.dark-theme .ql-snow .ql-picker, body.dark-theme .ql-snow .ql-stroke, body.dark-theme .form_custom_label, body.dark-theme .dropdown-menu.datepicker-dropdown, body.dark-theme .select-picker.role-permission-select, body.dark-theme .tagify__tag > div > *, body.dark-theme .tagify__tag__removeBtn, body.dark-theme .dropdown-menu.dashboard-settings, body.dark-theme .daterangepicker td.in-range, body.dark-theme .text-muted, body.dark-theme .input-group-text, body.dark-theme .bootstrap-select .dropdown-toggle::after, body.dark-theme .btn-primary:hover .text-white, body.dark-theme .fc .fc-col-header-cell-cushion, body.dark-theme .swal2-title, body.dark-theme .swal2-content, body.dark-theme .login_box a, body.dark-theme .bg-grey, body.dark-theme .bg-grey span, body.dark-theme .desktop-description, body.dark-theme .item_name, body.dark-theme .quantity, body.dark-theme .cost_per_item, body.dark-theme .ticket-message:hover p {
   color: #D5D8DF !important;
 }
@@ -18302,27 +18258,27 @@ body.dark-theme .ql-snow .ql-stroke {
   stroke: #D5D8DF;
 }
 body.dark-theme .filter-box, body.dark-theme .table tr td, body.dark-theme .login_header {
-  box-shadow: 0 1px 0 0 #4B4E69;
+  box-shadow: 0 0.6px 0 0 rgba(128, 128, 128, 0.3921568627); /* changed from 0 1px 0 0 #4B4E69 to 0 0.6px 0 0 #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .border-right-grey, body.dark-theme .task_view .taskView, body.dark-theme .border-right {
-  border-right: 1px solid #4B4E69 !important;
+  border-right: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .border-left-grey, body.dark-theme .more-filters, body.dark-theme .daterangepicker.show-ranges.ltr .drp-calendar.left, body.dark-theme .border-left, body.dark-theme .c-inv-btns .dropdown-toggle span {
-  border-left: 1px solid #4B4E69 !important;
+  border-left: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .border-bottom-grey, body.dark-theme .main-header, body.dark-theme .modal-header, body.dark-theme .modal-body, body.dark-theme .message_wrapper .msg-header, body.dark-theme .border-bottom, body.dark-theme .nav-tabs, body.dark-theme .tabs.--show-secondary .-secondary li {
-  border-bottom: 1px solid #4B4E69 !important;
+  border-bottom: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .border-top-grey, body.dark-theme .modal-footer, body.dark-theme .more-filters .more-filter-tab.in .clear-all, body.dark-theme .daterangepicker .drp-buttons, body.dark-theme .border-top {
-  border-top: 1px solid #4B4E69 !important;
+  border-top: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .b-shadow-4, body.dark-theme .qs-datepicker-container, body.dark-theme .form-control, body.dark-theme .w-tables, body.dark-theme .c-inv-desc table tr td, body.dark-theme .border, body.dark-theme .table-bordered, body.dark-theme .c-inv-total .c-inv-total-right td {
   box-shadow: none;
-  border: 1px solid #4B4E69 !important;
+  border: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown, body.dark-theme .dropdown-menu, body.dark-theme .add-client, body.dark-theme .modal-content, body.dark-theme input, body.dark-theme tbody, body.dark-theme .message_wrapper .msg-content-right .mbl-sender-name, body.dark-theme .more-filters .more-filter-tab, body.dark-theme .daterangepicker {
   background-color: #181C34;
-  border: 1px solid #4B4E69 !important;
+  border: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .modal.show {
   background-color: rgba(0, 0, 0, 0.47);
@@ -18331,7 +18287,7 @@ body.dark-theme .menu-collapse:before {
   background: none;
 }
 body.dark-theme .recent-activity .res-activity-list:after {
-  border: 1px solid #4B4E69 !important;
+  border: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .select-box .date-picker-field, body.dark-theme .select-box .date-picker-field1, body.dark-theme .msg-content-left input {
   border: none !important;
@@ -18342,28 +18298,28 @@ body.dark-theme .close {
 }
 body.dark-theme .table thead th {
   box-shadow: none;
-  border-bottom: 1px solid #4B4E69 !important;
+  border-bottom: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
   color: #D5D8DF !important;
 }
 body.dark-theme .c-inv-disc td, body.dark-theme .inv-num-date tr td, body.dark-theme .inv-detail tr td, body.dark-theme .message_wrapper .msg-content-left, body.dark-theme .message_wrapper, body.dark-theme .message_wrapper .msg-content-left .card, body.dark-theme .message_wrapper .input-group, body.dark-theme .settings-sidebar, body.dark-theme .border-grey, body.dark-theme .ticket-wrapper, body.dark-theme .task-detail-panel, body.dark-theme ul.thumbnails.image_picker_selector li .thumbnail, body.dark-theme .task_view, body.dark-theme .fc-theme-standard .fc-scrollgrid, body.dark-theme .fc-theme-standard td, body.dark-theme .fc-theme-standard th, body.dark-theme .fc .fc-button-primary, body.dark-theme .dropify-wrapper, body.dark-theme .input-group-text, body.dark-theme .fc-theme-standard .fc-list, body.dark-theme .tagify, body.dark-theme .list-group-item {
-  border: 1px solid #4B4E69 !important;
+  border: 0.6px solid rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .dash-border-top {
-  border-top: 1px dashed #4B4E69 !important;
+  border-top: 0.6px dashed rgba(128, 128, 128, 0.3921568627) !important; /* changed from 1px dashed #4B4E69 to 0.6px dashed #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .daterangepicker .ranges li.active, body.dark-theme .page-link:hover, body.dark-theme .permisison-table .bg-light, body.dark-theme .w-task-board-box:after {
-  background-color: #4B4E69 !important;
+  background-color: rgba(128, 128, 128, 0.3921568627) !important; /* changed from #4B4E69 to #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .ql-toolbar.ql-snow, body.dark-theme .ql-container.ql-snow, body.dark-theme .daterangepicker .calendar-table .next span, body.dark-theme .daterangepicker .calendar-table .prev span {
-  border-color: #4B4E69;
+  border-color: rgba(128, 128, 128, 0.3921568627); /* changed from #4B4E69 to #80808064 - Surface card divider color and tables divider */
 }
 body.dark-theme .daterangepicker .calendar-table {
-  border: 1px solid #181c34;
+  border: 0.6px solid rgba(128, 128, 128, 0.3921568627); /* changed from 1px solid #181c34 to 0.6px solid #80808064 - Surface card divider color and tables divider */
   background-color: #181c34;
 }
 body.dark-theme .page-item.disabled .page-link, body.dark-theme .pagination li a {
   background-color: #29304c;
-  border-color: #29304c;
+  border-color: rgba(128, 128, 128, 0.3921568627);
 }
 body.dark-theme .filter-box .select-box .bootstrap-select .dropdown-toggle, body.dark-theme .filter-box .select-box .bootstrap-select .btn-light:not(:disabled):not(.disabled):active, body.dark-theme .filter-box .select-box .bootstrap-select .btn-light:not(:disabled):not(.disabled).active, body.dark-theme .btn:hover, body.dark-theme .message_wrapper .msg-content-right .chat-box .card:hover p {
   color: #9c9fa6 !important;

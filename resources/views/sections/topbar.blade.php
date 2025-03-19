@@ -34,7 +34,7 @@
     <!-- NAVBAR LEFT(MOBILE MENU COLLAPSE) END-->
     <!-- NAVBAR RIGHT(SEARCH, ADD, NOTIFICATION, LOGOUT) START-->
     <div class="page-header-right float-right d-flex align-items-center justify-content-end">
-
+        
         <span id="timer-clock">
             @if(isset($selfActiveTimer))
                 @include('sections.timer_clock', ['selfActiveTimer' => $selfActiveTimer])
