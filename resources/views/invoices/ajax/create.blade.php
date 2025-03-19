@@ -14,7 +14,7 @@ $addProductPermission = user()->permission('add_product');
 @else
 
 <!-- CREATE INVOICE START -->
-<div class="bg-white rounded b-shadow-4 create-inv">
+<div class="bg-white rounded shadow-none create-inv">
 
 
     <!-- HEADING START -->

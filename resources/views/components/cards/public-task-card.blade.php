@@ -7,7 +7,7 @@ $moveClass = '';
     @endphp
 @endif
 
-<div class="card rounded bg-white border-grey b-shadow-4 m-1 mb-3 {{ $moveClass }} task-card"
+<div class="card rounded bg-white border-grey shadow-none m-1 mb-3 {{ $moveClass }} task-card"
     data-task-id="{{ $task->id }}" id="drag-task-{{ $task->id }}">
     <div class="card-body p-2">
         <div class="d-flex justify-content-between mb-2">

@@ -1,7 +1,7 @@
 @if (in_array('week_timelog', $activeWidgets) && $sidebarUserPermissions['view_timelogs'] != 5 && $sidebarUserPermissions['view_timelogs'] != 'none' && in_array('timelogs', user_modules()))
     <div @class(['mb-3', 'col-md-6' => (in_array('lead', $activeWidgets) && $leadAgent), 'col-md-12' => !(in_array('lead', $activeWidgets) && $leadAgent)])>
         <div
-            class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center">
+            class="bg-white p-20 rounded shadow-none d-flex justify-content-between align-items-center">
             <div class="d-block  w-100">
                 @php
                     $totalWeekTime = $weekWiseTimelogs - $weekWiseTimelogBreak;

@@ -23,7 +23,7 @@ $viewLeadFollowupPermission = user()->permission('view_lead_follow_up');
                             <i class="fa fa-ellipsis-h"></i>
                         </button>
 
-                        <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                        <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                 aria-labelledby="dropdownMenuLink" tabindex="0">
                             <a class="dropdown-item openRightModal"
                                 href="{{ route('deals.edit', $deal->id).'?tab=overview' }}">@lang('app.edit')</a>
@@ -109,7 +109,7 @@ $viewLeadFollowupPermission = user()->permission('view_lead_follow_up');
             </x-cards.data>
 
             <div class="bg-additional-grey rounded my-3">
-                <div class="s-b-inner s-b-notifications bg-white b-shadow-4 rounded">
+                <div class="s-b-inner s-b-notifications bg-white shadow-none rounded">
                     <x-tab-section class="deal-tabs">
                         @if($viewLeadFilePermission != 'none')
                             <x-tab-item class="ajax-tab files" :active="(request('tab') === 'files' || !request('tab'))"

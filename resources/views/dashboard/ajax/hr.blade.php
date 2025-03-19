@@ -17,7 +17,7 @@
 
         <div class="col-xl-4 col-lg-6 col-md-6 mb-3">
 
-            <div class="bg-white p-3 rounded b-shadow-4 d-flex justify-content-between align-items-center mb-4 mb-md-0 mb-lg-0">
+            <div class="bg-white p-3 rounded shadow-none d-flex justify-content-between align-items-center mb-4 mb-md-0 mb-lg-0">
                 <div class="d-block ">
                     <h5 class="f-15 f-w-500 text-darkest-grey">@lang('app.menu.employees')</h5>
                     <div class="d-flex">

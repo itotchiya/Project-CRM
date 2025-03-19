@@ -15,7 +15,7 @@
             <div class="col-lg-6">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="card bg-white border-0 b-shadow-4">
+                        <div class="card bg-white border-0 shadow-none">
                             <div class="card-body ">
                                 <div class="col-md-12 mb-3">
                                     <div class="row">

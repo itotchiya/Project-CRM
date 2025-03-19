@@ -18,7 +18,7 @@ $attendeesIds = $event->attendee->pluck('user_id')->toArray();
     <h3 class="heading-h1 mb-3">{{ $event->event_name }}</h3>
     <div class="row">
         <div class="col-sm-12">
-            <div class="card bg-white border-0 b-shadow-4">
+            <div class="card bg-white border-0 shadow-none">
                 <div class="card-header bg-white  border-bottom-grey justify-content-between p-20">
                     <div class="row">
                         <div class="col-lg-8 col-10">
@@ -49,7 +49,7 @@ $attendeesIds = $event->attendee->pluck('user_id')->toArray();
                                     <i class="fa fa-ellipsis-h"></i>
                                 </button>
 
-                                <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                     aria-labelledby="dropdownMenuLink" tabindex="0">
                                     @if ($editPermission == 'all'
                                         || ($editPermission == 'added' && $event->added_by == user()->id)
@@ -175,7 +175,7 @@ $attendeesIds = $event->attendee->pluck('user_id')->toArray();
                                                     <i class="fa fa-ellipsis-h"></i>
                                                 </button>
 
-                                                <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                                <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                                     aria-labelledby="dropdownMenuLink" tabindex="0">
                                                         @if ($file->icon == 'images')
                                                             <a class="img-lightbox cursor-pointer d-block text-dark-grey f-13 pt-3 px-3" data-image-url="{{ $file->file_url }}" href="javascript:;">@lang('app.view')</a>

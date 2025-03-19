@@ -18,7 +18,7 @@
 </style>
 
 <!-- CREATE INVOICE START -->
-<div class="bg-white rounded b-shadow-4 create-inv">
+<div class="bg-white rounded shadow-none create-inv">
     <!-- HEADING START -->
     <div class="d-block d-lg-flex d-md-flex justify-content-between action-bar">
         <div class="px-lg-4 px-md-4 px-3 py-3">

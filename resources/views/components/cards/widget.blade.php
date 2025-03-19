@@ -1,5 +1,5 @@
 <div
-    {{ $attributes->merge(['class' => 'bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center']) }}>
+    {{ $attributes->merge(['class' => 'bg-white p-20 rounded shadow-none d-flex justify-content-between align-items-center']) }}>
     <div class="d-block ">
         <h5 class="f-15 f-w-500 mb-20 text-darkest-grey">{{ $title }}
             @if (!is_null($info))

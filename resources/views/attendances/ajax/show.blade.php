@@ -157,7 +157,7 @@ $deleteAttendancePermission = user()->permission('delete_attendance');
                                         type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fa fa-ellipsis-h"></i>
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0 mr-2"
+                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0 mr-2"
                                         aria-labelledby="dropdownMenuLink" tabindex="0">
 
                                         @if ($editAttendancePermission == 'all'

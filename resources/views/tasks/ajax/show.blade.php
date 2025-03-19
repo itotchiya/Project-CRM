@@ -12,7 +12,7 @@
     <h3 class="heading-h1 mb-3">{{ $task->heading }}</h3>
     <div class="row">
         <div class="col-sm-9">
-            <div class="card bg-white border-0 b-shadow-4">
+            <div class="card bg-white border-0 shadow-none">
                 <div class="card-header bg-white  border-bottom-grey  justify-content-between p-20">
                     <div class="row">
                         <div class="col-lg-8 col-10">
@@ -93,7 +93,7 @@
                                     <i class="fa fa-ellipsis-h"></i>
                                 </button>
 
-                                <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                      aria-labelledby="dropdownMenuLink" tabindex="0">
 
                                     @if ($sendReminderPermission == 'all' && $task->boardColumn->slug != 'completed')
@@ -326,7 +326,7 @@
                 <!-- TASK TABS START -->
                 <div class="bg-additional-grey rounded my-3">
 
-                    <div class="s-b-inner s-b-notifications bg-white b-shadow-4 rounded">
+                    <div class="s-b-inner s-b-notifications bg-white shadow-none rounded">
 
                         <x-tab-section class="task-tabs">
 

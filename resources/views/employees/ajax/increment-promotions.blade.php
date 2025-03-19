@@ -55,7 +55,7 @@
                                             <i class="fa fa-ellipsis-h"></i>
                                         </button>
 
-                                        <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                        <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                             aria-labelledby="dropdownMenuLink" tabindex="0">
                                             <a class="dropdown-item update-promotion" href="javascript:;" data-promotion-id="{{$progress['data']->id}}">
                                                 <i class="fa fa-edit mr-1"></i> @lang('app.edit')

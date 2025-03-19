@@ -6,7 +6,7 @@ $deleteDepartmentPermission = user()->permission('delete_department');
 <div id="department-section">
     <div class="row">
         <div class="col-sm-12">
-            <div class="card bg-white border-0 b-shadow-4">
+            <div class="card bg-white border-0 shadow-none">
                 <div class="card-header bg-white  border-bottom-grey  justify-content-between p-20">
                     <div class="row">
                         <div class="col-md-10 col-10">
@@ -19,7 +19,7 @@ $deleteDepartmentPermission = user()->permission('delete_department');
                                         type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fa fa-ellipsis-h"></i>
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                         aria-labelledby="dropdownMenuLink" tabindex="0">
                                         @if($editClientPermission == 'all' || ($editClientPermission == 'added' && user()->id == $row->added_by) || ($editClientPermission == 'both' && user()->id == $contact->added_by))
                                             <a class="dropdown-item openRightModal"

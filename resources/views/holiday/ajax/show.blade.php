@@ -6,7 +6,7 @@
 <div id="holiday-detail-section">
     <div class="row">
         <div class="col-sm-12">
-            <div class="bg-white border-0 card b-shadow-4">
+            <div class="bg-white border-0 card shadow-none">
                 <div class="p-20 bg-white card-header border-bottom-grey  justify-content-between">
                     <div class="row">
                         <div class="col-lg-10 col-10">
@@ -25,7 +25,7 @@
                                         <i class="fa fa-ellipsis-h"></i>
                                     </button>
 
-                                    <div class="p-0 rounded dropdown-menu dropdown-menu-right border-grey b-shadow-4"
+                                    <div class="p-0 rounded dropdown-menu dropdown-menu-right border-grey shadow-none"
                                         aria-labelledby="dropdownMenuLink" tabindex="0">
                                         @if ($editPermission == 'all' || ($editPermission == 'added' && $holiday->added_by == user()->id))
                                             <a class="dropdown-item openRightModal"

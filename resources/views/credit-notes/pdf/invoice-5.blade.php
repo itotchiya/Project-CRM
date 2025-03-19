@@ -35,7 +35,7 @@
         }
 
         .bg-white {
-            background-color: #fff;
+            background-color: #232323; /* changed from #fff to #232323 - Surface card background */
         }
 
         .border-radius-25 {

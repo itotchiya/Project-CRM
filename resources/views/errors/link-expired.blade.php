@@ -64,7 +64,7 @@
 
         .bg-white {
             --bg-opacity: 1;
-            background-color: #fff;
+            background-color: #232323; /* changed from #fff to #232323 - Surface card background */
             background-color: rgba(255, 255, 255, var(--bg-opacity))
         }
 

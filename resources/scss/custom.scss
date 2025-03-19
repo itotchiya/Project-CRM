@@ -40,16 +40,16 @@ $dropify-font-path: "../fonts" !default;
 }
 
 body.dark-theme {
-    background-color: #181c34;
+    background-color: #282227;  /* changed from #181c34 to #282227 - Main Background color for the dark theme */
     .preloader-container,
     .bg-additional-grey {
-        background-color: #181c34;
+        background-color: #282227;  /* changed from #181c34 to #282227 - Main Background color for the dark theme */
     }
 }
 
 .dropify-wrapper {
-    border-radius: 0.25rem;
-    border: 1px solid #e8eef3;
+    border-radius: none; /* removed border-radius - Surface card Border Radius */
+    border: 0.6px solid #80808064; /* changed from 1px solid #e8eef3 to 0.6px solid #80808064 - Surface card divider color and tables divider */
     z-index: 0;
 }
 

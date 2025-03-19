@@ -2,7 +2,7 @@
 <div id="notice-detail-section">
     <div class="row">
         <div class="col-sm-12">
-            <div class="card bg-white border-0 b-shadow-4">
+            <div class="card bg-white border-0 shadow-none">
                 <div class="card-header bg-white  border-bottom-grey  justify-content-between p-20">
                     <div class="row">
                         <div class="col-lg-10 col-10">

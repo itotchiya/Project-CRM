@@ -45,7 +45,7 @@
                                     <i class="fa fa-ellipsis-h"></i>
                                 </button>
 
-                                <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                     aria-labelledby="dropdownMenuLink" tabindex="0">
                                     <a class="dropdown-item openRightModal"
                                         href="{{ route('clients.edit', $client->id) }}">@lang('app.edit')</a>
@@ -196,7 +196,7 @@
         @if(in_array('invoices', user_modules()))
         <div class="row mt-4">
             <div class="col-md-12">
-                <div class="card bg-white border-0 b-shadow-4">
+                <div class="card bg-white border-0 shadow-none">
                     <x-cards.data :title="__('app.menu.invoices')">
                         @if (array_sum($invoiceChart['values']) > 0)
                             <a href="javascript:;" class="text-darkest-grey f-w-500 piechart-full-screen" data-chart-id="invoice-chart" data-chart-data="{{ json_encode($invoiceChart) }}"><i class="fas fa-expand float-right mr-3"></i></a>

@@ -53,7 +53,7 @@
                     <x-cards.public-task-card :draggable="'false'" :task="$task"/>
                 @empty
                     @if ($column->tasks_count == 0)
-                        <div class="card rounded bg-white border-grey b-shadow-4 m-1 mb-3 no-task-card move-disable">
+                        <div class="card rounded bg-white border-grey shadow-none m-1 mb-3 no-task-card move-disable">
                             <div class="card-body">
                                 <div class="d-flex justify-content-center py-3">
                                     <p class="mb-0">

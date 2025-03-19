@@ -2,7 +2,7 @@
 
     <div class="row">
         <div class="col-sm-12">
-            <div class="card bg-white border-0 b-shadow-4">
+            <div class="card bg-white border-0 shadow-none">
                 <div class="card-header bg-white  border-bottom-grey  justify-content-between p-20">
                     <div class="row">
                         <div class="col-md-8">
@@ -16,7 +16,7 @@
                                     <i class="fa fa-ellipsis-h"></i>
                                 </button>
 
-                                <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                      aria-labelledby="dropdownMenuLink" tabindex="0">
 
                                     <a class="cursor-pointer d-block text-dark-grey f-13 px-3 py-2 openRightModal"
@@ -111,7 +111,7 @@
                 <a class="mb-0 d-block d-lg-none text-dark-grey s-b-mob-sidebar" onclick="openSettingsSidebar()"><i
                         class="fa fa-ellipsis-v"></i></a>
 
-                <div class="s-b-inner s-b-notifications bg-white b-shadow-4 rounded">
+                <div class="s-b-inner s-b-notifications bg-white shadow-none rounded">
 
                     <x-tab-section class="task-tabs">
 

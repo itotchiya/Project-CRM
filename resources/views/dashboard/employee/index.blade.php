@@ -250,7 +250,7 @@
                         @if (in_array('profile', $activeWidgets))
                         <!-- EMP DASHBOARD INFO START -->
                         <div class="col-md-12">
-                            <div class="card border-0 b-shadow-4 mb-3 e-d-info">
+                            <div class="card border-0 shadow-none mb-3 e-d-info">
                                 <a @if(!in_array('client', user_roles())) href="{{ route('employees.show', user()->id) }}" @endif >
                                     <div class="card-horizontal align-items-center">
                                         <div class="card-img">
@@ -403,7 +403,7 @@
                     @if (in_array('tasks', $activeWidgets) && (!is_null($viewTaskPermission) && $viewTaskPermission != 'none') && in_array('tasks', user_modules()))
                         <div class="col-md-6 mb-3">
                             <div
-                                class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center mb-4 mb-md-0 mb-lg-0">
+                                class="bg-white p-20 rounded shadow-none d-flex justify-content-between align-items-center mb-4 mb-md-0 mb-lg-0">
                                 <div class="d-block ">
                                     <h5 class="f-15 f-w-500 mb-20 text-darkest-grey">@lang('app.menu.tasks')</h5>
                                     <div class="d-flex">

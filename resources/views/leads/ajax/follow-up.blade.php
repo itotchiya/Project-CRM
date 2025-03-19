@@ -53,7 +53,7 @@ $deleteLeadFollowUpPermission = user()->permission('delete_lead_follow_up');
                                     type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fa fa-ellipsis-h"></i>
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                         aria-labelledby="dropdownMenuLink" tabindex="0">
                                     @if ($editLeadFollowUpPermission == 'all' || ($editLeadFollowUpPermission == 'added' && $folllowUp->added_by == user()->id))
                                         <a class="cursor-pointer d-block text-dark-grey f-13 py-3 px-3 edit-table-row-lead"

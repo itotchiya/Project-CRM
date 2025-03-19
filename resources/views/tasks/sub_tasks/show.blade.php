@@ -33,7 +33,7 @@
                         <i class="fa fa-ellipsis-h"></i>
                     </button>
 
-                    <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                    <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                         aria-labelledby="dropdownMenuLink" tabindex="0">
 
                         @if ($viewSubTaskPermission == 'all' || ($viewSubTaskPermission == 'added' && $subtask->added_by == user()->id))
@@ -71,7 +71,7 @@
                                         <i class="fa fa-ellipsis-h"></i>
                                     </button>
 
-                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                         aria-labelledby="dropdownMenuLink" tabindex="0">
                                         @if ($file->icon != 'images')
                                             <a class="cursor-pointer d-block text-dark-grey f-13 pt-3 px-3 "

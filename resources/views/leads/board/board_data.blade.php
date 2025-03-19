@@ -56,7 +56,7 @@ $changeStatusPermission = user()->permission('change_deal_stages');
                                 <i class="fa fa-ellipsis-h"></i>
                             </button>
 
-                            <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                            <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                 aria-labelledby="dropdownMenuLink" tabindex="0">
                                 @if ($addLeadPermission != 'none')
                                     <a class="dropdown-item openRightModal"
@@ -88,7 +88,7 @@ $changeStatusPermission = user()->permission('change_deal_stages');
              <div class="b-p-body">
                  <!-- MAIN TASKS START -->
                  <div class="b-p-tasks" id="drag-container-{{ $column->id }}" data-column-id="{{ $column->id }}">
-                    <div class="card rounded bg-white border-grey b-shadow-4 m-1 mb-3 no-task-card move-disable {{ (count($column['deals']) > 0) ? 'd-none' : '' }}">
+                    <div class="card rounded bg-white border-grey shadow-none m-1 mb-3 no-task-card move-disable {{ (count($column['deals']) > 0) ? 'd-none' : '' }}">
                         <div class="card-body">
                             <div class="d-flex justify-content-center py-3">
                                 <p class="mb-0">

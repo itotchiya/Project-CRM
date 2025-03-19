@@ -44,7 +44,7 @@
                                     <i class="fa fa-ellipsis-h"></i>
                                 </button>
 
-                                <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                      aria-labelledby="dropdownMenuLink" tabindex="0">
                                     @if ($viewLeadNotePermission == 'all' || ($viewLeadNotePermission == 'added' && user()->id == $note->added_by) || ($viewLeadNotePermission == 'both' && user()->id == $note->added_by))
                                         <a class="cursor-pointer d-block text-dark-grey f-13 py-1 px-3 view-note openRightModal"

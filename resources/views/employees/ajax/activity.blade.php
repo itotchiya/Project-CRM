@@ -2,11 +2,11 @@
 <div class="row py-0 py-md-0 py-lg-3 mt-4">
     <div class="col-lg-12 col-md-12 mb-4 mb-xl-0 mb-lg-4">
         <!-- ACTIVITY DETAIL START -->
-        <div class="p-activity-detail cal-info b-shadow-4" data-menu-vertical="1" data-menu-scroll="1"
+        <div class="p-activity-detail cal-info shadow-none" data-menu-vertical="1" data-menu-scroll="1"
             data-menu-dropdown-timeout="500" id="projectActivityDetail">
             {{-- @dd($histories); --}}
             @forelse($histories as $history)
-                <div class="card border-0 b-shadow-4 p-20 rounded">
+                <div class="card border-0 shadow-none p-20 rounded">
                     <div class="card-horizontal">
                         <div class="card-img my-1 ml-0">
                             <img src="{{ $history->user->image_url }}" alt="{{ $history->user->name }}">

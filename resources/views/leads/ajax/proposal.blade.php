@@ -59,7 +59,7 @@
                                         type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fa fa-ellipsis-h"></i>
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                      aria-labelledby="dropdownMenuLink" tabindex="0">
                                     @if ($viewProposalPermission == 'all' || ($viewProposalPermission == 'added' && user()->id == $proposal->added_by) || ($viewProposalPermission == 'both' && user()->id == $proposal->added_by))
                                         <a class="cursor-pointer d-block text-dark-grey f-13 py-1 px-3 view-proposal" target="_blank"

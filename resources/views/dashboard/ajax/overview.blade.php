@@ -300,7 +300,7 @@
                 padding="false"
                 otherClasses="h-200 p-activity-detail cal-info">
                 @forelse($projectActivities as $key=>$activity)
-                    <div class="card border-0 b-shadow-4 p-20 rounded-0">
+                    <div class="card border-0 shadow-none p-20 rounded-0">
                         <div class="card-horizontal">
                             <div class="card-header m-0 p-0 bg-white rounded">
                                 <x-date-badge
@@ -338,7 +338,7 @@
                 padding="false"
                 otherClasses="h-200 p-activity-detail cal-info">
                 @forelse($userActivities as $key=>$activity)
-                    <div class="card border-0 b-shadow-4 p-20 rounded-0">
+                    <div class="card border-0 shadow-none p-20 rounded-0">
                         <div class="card-horizontal">
                             <div class="card-header m-0 p-0 bg-white rounded">
                                 <x-date-badge

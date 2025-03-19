@@ -35,7 +35,7 @@
     @if (in_array('leads', user_modules()) && in_array('total_lead_conversions', $activeWidgets))
         <div class="col-xl-4 col-lg-6 col-md-6 mb-3">
             <a href="javascript:;" id="totalLeadConversions">
-                <div class="bg-white p-20 rounded b-shadow-4 d-flex justify-content-between align-items-center">
+                <div class="bg-white p-20 rounded shadow-none d-flex justify-content-between align-items-center">
                     <div class="d-block ">
                         <h5 class="f-15 f-w-500 mb-20 text-darkest-grey"> @lang('modules.deal.dealConversions')
                             <i class="fa fa-question-circle" data-toggle="popover" data-placement="top"
@@ -97,7 +97,7 @@
 
     @if (in_array('leads', user_modules()) && in_array('lead_vs_status', $activeWidgets))
         <div class="col-sm-12 col-lg-6 mt-3">
-            <div class="card bg-white border-0 b-shadow-4" id="lead_vs_status">
+            <div class="card bg-white border-0 shadow-none" id="lead_vs_status">
 
                 <x-cards.card-header>
                     @lang('modules.deal.dealVsStatus')

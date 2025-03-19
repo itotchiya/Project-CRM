@@ -5,7 +5,7 @@ $deletePermission = user()->permission('delete_appreciation');
 <div id="notice-detail-section">
     <div class="row">
         <div class="col-sm-12">
-            <div class="card bg-white border-0 b-shadow-4">
+            <div class="card bg-white border-0 shadow-none">
                 <div class="card-header bg-white  border-bottom-grey  justify-content-between p-20">
                     <div class="row">
                         <div class="col-lg-10 col-10">
@@ -24,7 +24,7 @@ $deletePermission = user()->permission('delete_appreciation');
                                         <i class="fa fa-ellipsis-h"></i>
                                     </button>
 
-                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                         aria-labelledby="dropdownMenuLink" tabindex="0">
 
                                         @if ($editPermission == 'all' ||

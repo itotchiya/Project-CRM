@@ -23,27 +23,27 @@ body.dark-theme{
         stroke: #D5D8DF;
     }
     .filter-box, .table tr td, .login_header{
-        box-shadow: 0 1px 0 0 #4B4E69;
+        box-shadow: 0 0.6px 0 0 #80808064; /* changed from 0 1px 0 0 #4B4E69 to 0 0.6px 0 0 #80808064 - Surface card divider color and tables divider */
     }
     .border-right-grey, .task_view .taskView, .border-right{
-        border-right: 1px solid #4B4E69 !important;
+        border-right: 0.6px solid #80808064 !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
     }
     .border-left-grey, .more-filters, .daterangepicker.show-ranges.ltr .drp-calendar.left, .border-left, .c-inv-btns .dropdown-toggle span{
-        border-left: 1px solid #4B4E69 !important;
+        border-left: 0.6px solid #80808064 !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
     }
     .border-bottom-grey, .main-header, .modal-header, .modal-body, .message_wrapper .msg-header, .border-bottom, .nav-tabs, .tabs.--show-secondary .-secondary li{
-        border-bottom: 1px solid #4B4E69 !important;
+        border-bottom: 0.6px solid #80808064 !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
     }
     .border-top-grey, .modal-footer, .more-filters .more-filter-tab.in .clear-all, .daterangepicker .drp-buttons, .border-top {
-        border-top: 1px solid #4B4E69 !important;
+        border-top: 0.6px solid #80808064 !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
     }
     .b-shadow-4, .qs-datepicker-container, .form-control, .w-tables, .c-inv-desc table tr td, .border, .table-bordered, .c-inv-total .c-inv-total-right td{
         box-shadow: none;
-        border: 1px solid #4B4E69 !important;
+        border: 0.6px solid #80808064 !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
     }
     .sidebar-brand-box .sidebar-brand-dropdown, .dropdown-menu, .add-client, .modal-content,input, tbody, .message_wrapper .msg-content-right .mbl-sender-name, .more-filters .more-filter-tab, .daterangepicker{
         background-color: #181C34;
-        border: 1px solid #4B4E69 !important;
+        border: 0.6px solid #80808064 !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
     }
 
     .modal.show {
@@ -55,7 +55,7 @@ body.dark-theme{
     }
 
     .recent-activity .res-activity-list:after {
-        border: 1px solid #4B4E69 !important;
+        border: 0.6px solid #80808064 !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
     }
 
     .select-box .date-picker-field, .select-box .date-picker-field1, .msg-content-left input{
@@ -67,28 +67,28 @@ body.dark-theme{
     }
     .table thead th{
         box-shadow: none;
-        border-bottom: 1px solid #4B4E69 !important;
+        border-bottom: 0.6px solid #80808064 !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
         color: #D5D8DF !important;
     }
     .c-inv-disc td, .inv-num-date tr td, .inv-detail tr td, .message_wrapper .msg-content-left, .message_wrapper, .message_wrapper .msg-content-left .card, .message_wrapper .input-group, .settings-sidebar, .border-grey, .ticket-wrapper, .task-detail-panel, ul.thumbnails.image_picker_selector li .thumbnail, .task_view, .fc-theme-standard .fc-scrollgrid, .fc-theme-standard td, .fc-theme-standard th, .fc .fc-button-primary, .dropify-wrapper, .input-group-text, .fc-theme-standard .fc-list, .tagify, .list-group-item  {
-        border: 1px solid #4B4E69 !important;
+        border: 0.6px solid #80808064 !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
     }
     .dash-border-top {
-        border-top: 1px dashed #4B4E69 !important;
+        border-top: 0.6px dashed #80808064 !important; /* changed from 1px dashed #4B4E69 to 0.6px dashed #80808064 - Surface card divider color and tables divider */
     }
     .daterangepicker .ranges li.active, .page-link:hover, .permisison-table .bg-light, .w-task-board-box:after{
-        background-color: #4B4E69 !important;
+        background-color: #80808064 !important; /* changed from #4B4E69 to #80808064 - Surface card divider color and tables divider */
     }
     .ql-toolbar.ql-snow, .ql-container.ql-snow, .daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span{
-        border-color: #4B4E69;
+        border-color: #80808064; /* changed from #4B4E69 to #80808064 - Surface card divider color and tables divider */
     }
     .daterangepicker .calendar-table{
-        border: 1px solid #181c34;
+        border: 0.6px solid #80808064; /* changed from 1px solid #181c34 to 0.6px solid #80808064 - Surface card divider color and tables divider */
         background-color: #181c34;
     }
     .page-item.disabled .page-link, .pagination li a{
         background-color: #29304c;
-        border-color: #29304c;
+        border-color: #80808064; /* changed from #4B4E69 to #80808064 - Surface card divider color and tables divider */
     }
     .filter-box .select-box .bootstrap-select .dropdown-toggle, .filter-box .select-box .bootstrap-select .btn-light:not(:disabled):not(.disabled):active, .filter-box .select-box .bootstrap-select .btn-light:not(:disabled):not(.disabled).active, .btn:hover, .message_wrapper .msg-content-right .chat-box .card:hover p{
         color: #9c9fa6 !important;

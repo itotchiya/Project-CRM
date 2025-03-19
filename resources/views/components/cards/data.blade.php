@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(['class' => 'card bg-white border-0 b-shadow-4']) }}>
+<div {{ $attributes->merge(['class' => 'card bg-white border-0 shadow-none']) }}>
     @if ($title)
         <x-cards.card-header>
             {!! $title !!}

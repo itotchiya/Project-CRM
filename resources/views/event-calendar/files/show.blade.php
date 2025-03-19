@@ -9,7 +9,7 @@
                                         <i class="fa fa-ellipsis-h"></i>
                                     </button>
 
-                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                         aria-labelledby="dropdownMenuLink" tabindex="0">
                                             @if ($file->icon == 'images')
                                                 <a class="img-lightbox cursor-pointer d-block text-dark-grey f-13 pt-3 px-3" data-image-url="{{ $file->file_url }}" href="javascript:;">@lang('app.view')</a>

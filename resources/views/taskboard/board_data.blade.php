@@ -59,7 +59,7 @@ $changeStatusPermission = user()->permission('change_status');
                                 <i class="fa fa-ellipsis-h"></i>
                             </button>
 
-                            <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                            <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                 aria-labelledby="dropdownMenuLink" tabindex="0">
 
                                 @if (($addTaskPermission == 'all' || $addTaskPermission == 'added') && $column->slug != 'waiting_approval')
@@ -92,7 +92,7 @@ $changeStatusPermission = user()->permission('change_status');
                 <!-- MAIN TASKS START -->
                 <div class="b-p-tasks" id="drag-container-{{ $column->id }}" data-column-id="{{ $column->id }}" data-status="{{ $column->slug }}">
                     <div
-                        class="card rounded bg-white border-grey b-shadow-4 m-1 mb-3 no-task-card move-disable {{ ($column->tasks_count > 0) ? 'd-none' : '' }}">
+                        class="card rounded bg-white border-grey shadow-none m-1 mb-3 no-task-card move-disable {{ ($column->tasks_count > 0) ? 'd-none' : '' }}">
                         <div class="card-body">
                             <div class="d-flex justify-content-center py-3">
                                 <p class="mb-0">

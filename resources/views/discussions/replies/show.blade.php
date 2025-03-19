@@ -43,7 +43,7 @@
                             <i class="fa fa-ellipsis-h"></i>
                         </button>
 
-                        <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                        <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                             aria-labelledby="dropdownMenuLink" tabindex="0">
 
                             <a class="dropdown-item add-reply" data-row-id="{{ $message->id }}"
@@ -95,7 +95,7 @@
                                         <i class="fa fa-ellipsis-h"></i>
                                     </button>
 
-                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                         aria-labelledby="dropdownMenuLink" tabindex="0">
 
                                         @if ($file->icon == 'images')

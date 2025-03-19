@@ -24,7 +24,7 @@ $deleteContractPermission = user()->permission('delete_contract');
                             <i class="fa fa-ellipsis-h"></i>
                         </button>
 
-                        <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                        <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                             aria-labelledby="dropdownMenuLink" tabindex="0">
                             @if ($editContractPermission == 'all' || ($editContractPermission == 'added' && $history->added_by == user()->id))
                                 <a class="dropdown-item edit-comment"

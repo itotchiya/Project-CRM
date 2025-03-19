@@ -161,7 +161,7 @@
                                         <i class="fa fa-ellipsis-h"></i>
                                     </button>
 
-                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                    <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                          aria-labelledby="dropdownMenuLink" tabindex="0">
                                         @if ($viewSubTaskPermission == 'all' || ($viewSubTaskPermission == 'added' && $subtask->added_by == user()->id))
                                             <a class="dropdown-item view-subtask" href="javascript:;"
@@ -198,7 +198,7 @@
                                                     </button>
 
                                                     <div
-                                                        class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                                                        class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                                                         aria-labelledby="dropdownMenuLink" tabindex="0">
 
                                                         @if ($file->icon == 'images')

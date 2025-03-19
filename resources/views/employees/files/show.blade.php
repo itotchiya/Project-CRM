@@ -26,7 +26,7 @@ $permission = 0; // assuming we do have permission for all uploaded files
                             <i class="fa fa-ellipsis-h"></i>
                         </button>
 
-                        <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                        <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                             aria-labelledby="dropdownMenuLink" tabindex="0">
                             @if ($viewDocumentPermission == 'all'
                             || ($viewDocumentPermission == 'added' && $file->added_by == user()->id)

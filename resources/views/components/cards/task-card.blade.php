@@ -16,7 +16,7 @@ $moveClass = '';
 @php
     $priorityColor = ($task->priority == 'high' ? '#dd0000' : ($task->priority == 'medium' ? '#ffc202' : '#0a8a1f'));
 @endphp
-<div class="card rounded bg-white border-grey b-shadow-4 m-1 mb-2 {{ $moveClass }} task-card"
+<div class="card rounded bg-white border-grey shadow-none m-1 mb-2 {{ $moveClass }} task-card"
     data-task-id="{{ $task->id }}" data-need-approval="{{ optional($task->project)->need_approval_by_admin ?? 0 }}" id="drag-task-{{ $task->id }}" style="border-left: 3px solid {{ $priorityColor }}; background-color: {{ $priorityColor.'08 !important;' }}">
     <div class="card-body p-2">
         <div class="d-flex justify-content-between mb-1">

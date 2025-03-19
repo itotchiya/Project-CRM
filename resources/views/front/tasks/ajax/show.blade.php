@@ -3,7 +3,7 @@
     <h3 class="heading-h1 mb-3">{{ $task->heading }}</h3>
     <div class="row">
         <div class="col-sm-9">
-            <div class="card bg-white border-0 b-shadow-4">
+            <div class="card bg-white border-0 shadow-none">
 
                 <div class="card-body">
                     <div class="col-12 px-0 pb-3 d-flex">
@@ -118,7 +118,7 @@
                 <a class="mb-0 d-block d-lg-none text-dark-grey s-b-mob-sidebar" onclick="openSettingsSidebar()"><i
                         class="fa fa-ellipsis-v"></i></a>
 
-                <div class="s-b-inner s-b-notifications bg-white b-shadow-4 rounded">
+                <div class="s-b-inner s-b-notifications bg-white shadow-none rounded">
 
                     <x-tab-section class="task-tabs">
 

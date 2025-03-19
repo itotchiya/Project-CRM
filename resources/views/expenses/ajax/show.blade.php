@@ -9,7 +9,7 @@
                             <i class="fa fa-ellipsis-h"></i>
                         </button>
 
-                        <div class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-0"
+                        <div class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-0"
                             aria-labelledby="dropdownMenuLink" tabindex="0">
                             @php
                                 $trashBtn = (!is_null($expense->project) && is_null($expense->project->deleted_at)) ? true : (is_null($expense->project) ? true : false) ;

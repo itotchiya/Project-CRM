@@ -12,7 +12,7 @@
                             <i class="fa fa-ellipsis-h"></i>
                         </button>
 
-                        <div id="cal-drop" class="dropdown-menu dropdown-menu-right border-grey rounded b-shadow-4 p-2">
+                        <div id="cal-drop" class="dropdown-menu dropdown-menu-right border-grey rounded shadow-none p-2">
                             @if(in_array('tasks', user_modules()))
                                 <div class="custom-control custom-checkbox cal-filter">
                                     <input type="checkbox" value="task"
