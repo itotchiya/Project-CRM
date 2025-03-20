@@ -3051,13 +3051,13 @@ input[type=button].btn-block {
 }
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 .btn-group > .btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
 }
 
 .dropdown-toggle-split {
@@ -4545,7 +4545,7 @@ a.badge:hover, a.badge:focus {
 
 .badge-primary {
   color: #fff;
-  background-color: var(--purple);
+  background-color: var(--purple-light);
 }
 a.badge-primary:hover, a.badge-primary:focus {
   color: #fff;
@@ -16323,7 +16323,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .w-tables {
-  box-shadow: 0 0 4px 0 #d2d9e4;
+  box-shadow: none;
 }
 @media (max-width: 767.98px) {
   .w-tables {
@@ -18397,7 +18397,7 @@ body.dark-theme .btn-secondary:hover {
   border: 1px solid #000000 !important;
 }
 body.dark-theme .daterangepicker:before {
-  border-bottom: 7px solid white;
+  border-bottom: 6px solid var(--divider);
 }
 body.dark-theme .daterangepicker:after {
   border-bottom: 6px solid var(--drop-down-item);
