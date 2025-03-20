@@ -317,6 +317,7 @@
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  background-color: var(--drop-down-item);
 }
 
 .daterangepicker .ranges li {
@@ -341,7 +342,7 @@
   }
 
   .daterangepicker .ranges ul {
-    width: 140px;
+    width: 220px;
   }
 
   .daterangepicker.single .ranges ul {

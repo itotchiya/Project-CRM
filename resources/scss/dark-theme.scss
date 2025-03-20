@@ -104,7 +104,7 @@ body.dark-theme{
         background-color: #616e80 !important;
     }
     .bootstrap-timepicker-widget.dropdown-menu:after{
-        border-bottom: 6px solid #4b4e69;
+        border-bottom: 6px solid var(--drop-down-item);
     }
     .tagify__tag>div::before{
         box-shadow: 0 0 0 var(--tag-inset-shadow-size,1.1em) #29304c inset;
@@ -158,15 +158,15 @@ body.dark-theme{
         }
     }
     .daterangepicker:before{
-        border-bottom: 7px solid #4b4e69;
+        border-bottom: 7px solid var(--drop-down-item);
     }
     .daterangepicker:after{
-        border-bottom: 6px solid #4b4e69;
+        border-bottom: 6px solid var(--drop-down-item);
     }
     .alert-secondary {
         color: #e2e3e8;
         background-color: #29304c;
-        border-color: #4b4e69;
+        border-color: var(--drop-down-item);
     }
     input:-webkit-autofill,
     input:-webkit-autofill:hover,

@@ -621,6 +621,7 @@ a.btn-primary {
 #datatableRange,
 #datatableRange2 {
     width: 220px;
+    height: 32px; /* I added this class to the input of the date range picker */
 }
 
 .daterangepicker td.in-range {
@@ -1054,6 +1055,6 @@ input[type="number"] {
     background-color: #181c34!important;
 }
 .dark-theme .ql-mention-list-container {
-    border: 1px solid #4B4E69!important;
+    border: 1px solid var(--drop-down-item)!important;
 }
 
