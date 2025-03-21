@@ -299,7 +299,7 @@
 } */
 
 .is-selected{
-  background-color: $purple !important;
+  background-color: var(--purple) !important;
   color: #fff !important;
 }
 

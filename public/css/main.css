@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*!
  * Quill Editor v1.3.7
  * https://quilljs.com/
@@ -1003,7 +1005,7 @@
   margin: 0 3px;
 }
 
-@charset "UTF-8";
+/*@charset "UTF-8";*/
 
 /************************ DASHBOARD UI KIT ***********************/
 /*!
@@ -1019,6 +1021,9 @@
   --purple-dark-theme: #6357bd;
   --purple-light: #7d6df5;
   --purple-dark: #554ba1;
+  --purple-active: #e9e5ff;
+  --Purple-active-12: #695dc61f;
+  --white-Active: #00E073;
   --pink: #ea4c89;
   --red: #D30000;
   --orange: #fd7e14;
@@ -1027,19 +1032,37 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
+  --white-hover: #E5E2F8;
+  --white-text: #413E54;
+  --black: #413E54;
+  --black-hover: #262434;
+  --black-text: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: var(--purple);
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #FCBD01;
-  --danger: #D92D20;
-  --danger-light: #FF3C2E;
+  --primary: #685BC6;
+  --primary-hover: #8E81E7;
+  --primary-text: #fff;
+  --secondary: #7B778F;
+  --secondary-hover: #9D9AAE;
+  --secondary-text: #fff;
+  --success: #3FE78E;
+  --success-hover: #46F498;
+  --success-text: #1A3728;
+  --info: #47A9F9;
+  --info-hover: #7BC4FF;
+  --info-text: #fff;
+  --warning: #FEC84B;
+  --warning-hover: #FFD575;
+  --warning-text: #393019;
+  --danger: #F93333;
+  --danger-hover: #FF6565;
+  --danger-text: #fff;
+  --danger-light: #ff6257;
   --danger-border: #ffa59e;
   --light: #f8f9fa;
   --dark: #343a40;
-  --primary-surface: #302C49;
+  --primary-surface-dark: #302C49;
+  --primary-surface-light: #302C49;
   --secodnary-surface: #9dff00;
   --main-background: #232038;
   --divider: #80808048;
@@ -5575,12 +5598,12 @@ a.badge:hover, a.badge:focus {
 }
 
 .badge-primary {
-  color: #fff;
-  background-color: var(--purple-light);
+  color: var(--primary-text);
+  background-color: var(--primary) !important;
 }
 a.badge-primary:hover, a.badge-primary:focus {
-  color: #fff;
-  background-color: #0062cc;
+  color: var(--primary-text);
+  background-color: var(--primary-hover) !important;
 }
 a.badge-primary:focus, a.badge-primary.focus {
   outline: 0;
@@ -5588,12 +5611,12 @@ a.badge-primary:focus, a.badge-primary.focus {
 }
 
 .badge-secondary {
-  color: #fff;
-  background-color: #6c757d;
+  color: var(--secondary-text);
+  background-color: var(--secondary) !important;
 }
 a.badge-secondary:hover, a.badge-secondary:focus {
-  color: #fff;
-  background-color: #545b62;
+  color: var(--secondary-text);
+  background-color: var(--secondary-hover) !important;
 }
 a.badge-secondary:focus, a.badge-secondary.focus {
   outline: 0;
@@ -5601,12 +5624,12 @@ a.badge-secondary:focus, a.badge-secondary.focus {
 }
 
 .badge-success {
-  color: #fff;
-  background-color: #28a745;
+  color: var(--success-text);
+  background-color: var(--success) !important;
 }
 a.badge-success:hover, a.badge-success:focus {
-  color: #fff;
-  background-color: #1e7e34;
+  color: var(--success-text);
+  background-color: var(--success-hover) !important;
 }
 a.badge-success:focus, a.badge-success.focus {
   outline: 0;
@@ -5614,12 +5637,12 @@ a.badge-success:focus, a.badge-success.focus {
 }
 
 .badge-info {
-  color: #fff;
-  background-color: #17a2b8;
+  color: var(--info-text);
+  background-color: var(--info) !important;
 }
 a.badge-info:hover, a.badge-info:focus {
-  color: #fff;
-  background-color: #117a8b;
+  color: var(--info-text);
+  background-color: var(--info-hover) !important;
 }
 a.badge-info:focus, a.badge-info.focus {
   outline: 0;
@@ -5627,12 +5650,12 @@ a.badge-info:focus, a.badge-info.focus {
 }
 
 .badge-warning {
-  color: #212529;
-  background-color: #FCBD01;
+  color: var(--warning-text);
+  background-color: var(--warning) !important;
 }
 a.badge-warning:hover, a.badge-warning:focus {
-  color: #212529;
-  background-color: #c99701;
+  color: var(--warning-text);
+  background-color: var(--warning-hover) !important;
 }
 a.badge-warning:focus, a.badge-warning.focus {
   outline: 0;
@@ -5640,12 +5663,12 @@ a.badge-warning:focus, a.badge-warning.focus {
 }
 
 .badge-danger {
-  color: #fff;
-  background-color: #D30000;
+  color: var(--danger-text);
+  background-color: var(--danger) !important;
 }
 a.badge-danger:hover, a.badge-danger:focus {
-  color: #fff;
-  background-color: #a00000;
+  color: var(--danger-text);
+  background-color: var(--danger-hover) !important;
 }
 a.badge-danger:focus, a.badge-danger.focus {
   outline: 0;
@@ -5653,12 +5676,12 @@ a.badge-danger:focus, a.badge-danger.focus {
 }
 
 .badge-light {
-  color: #212529;
-  background-color: #f8f9fa;
+  color: var(--white-text);
+  background-color: var(--white-hover) !important;
 }
 a.badge-light:hover, a.badge-light:focus {
-  color: #212529;
-  background-color: #dae0e5;
+  color: var(--white-text);
+  background-color: var(--white-hover) !important;
 }
 a.badge-light:focus, a.badge-light.focus {
   outline: 0;
@@ -5666,12 +5689,12 @@ a.badge-light:focus, a.badge-light.focus {
 }
 
 .badge-dark {
-  color: #fff;
-  background-color: #343a40;
+  color: var(--black-text);
+  background-color: var(--black-hover) !important;
 }
 a.badge-dark:hover, a.badge-dark:focus {
-  color: #fff;
-  background-color: #1d2124;
+  color: var(--black-text);
+  background-color: var(--black-hover) !important;
 }
 a.badge-dark:focus, a.badge-dark.focus {
   outline: 0;
@@ -6442,7 +6465,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "satoshi-regular", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7184,7 +7207,8 @@ button.bg-dark:focus {
 
 .d-flex {
   display: flex !important;
-  align-items: center !important;
+  /* align-items: center !important; */ /* removed this line */
+  align-content: start !important;
 }
 
 .d-inline-flex {
@@ -10609,7 +10633,16 @@ h3 {
 }
 
 .page-heading h2 {
-  line-height: 1.17;
+  font-family: "Satoshi-Medium" !important;
+  height: 21px;
+}
+
+h2 .text-lightest {
+  font-family: "Space Mono" !important;
+  letter-spacing: -0.8px !important;
+  font-size: 16px !important;
+  height: 21px !important;
+  align-content: end;
 }
 
 .page-header-right {
@@ -10714,10 +10747,12 @@ h3 {
   text-overflow: ellipsis;
 }
 
+
+
 /* ===== RESET CSS ====== */
 body {
   font-size: 14px;
-  font-family: "Helvetica Neue";
+  font-family: "Satoshi-Medium" !important;
   background-color: #fff;
   font-stretch: normal;
   font-style: normal;
@@ -10814,7 +10849,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue";
+  font-family: "Satoshi-Bold" !important;
   margin-top: 0;
 }
 
@@ -14782,11 +14817,11 @@ select.selectpicker {
 /**************** Dark Mode - dyal UX designer ****************/
 
 body.dark-theme .bg-white {
-  background-color: var(--primary-surface) !important; /* I added this class and set a background to the card component, tables and top header mohim dyal cards o top header ochi l3ibat khfaf */
+  background-color: var(--primary-surface-dark) !important; /* I added this class and set a background to the card component, tables and top header mohim dyal cards o top header ochi l3ibat khfaf */
 }
 
 body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown, body.dark-theme .dropdown-menu {
-  background-color: var(--primary-surface) !important; /* I added this class and set a background to the dropdown menu in the sidebar */
+  background-color: var(--primary-surface-dark) !important; /* I added this class and set a background to the dropdown menu in the sidebar */
 }
 
 body.dark-theme .main-container {
@@ -14804,7 +14839,7 @@ body.dark-theme .bg-additional-grey {
 
 .dropify-wrapper {
   border-radius: none; /* removed border-radius - Surface card Border Radius */
-  border: 0.6px solid var(--divider); /* changed from 1px solid #e8eef3 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border: 0.6px solid var(--divider); /* changed from 1px solid #e8eef3 to 0.6px solid #80808048 - Surface card divider color and tables divider */
   z-index: 0;
 }
 
@@ -15290,7 +15325,7 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
 }
 
 .settings-box {
-  padding: 18px 20px;
+  padding: 24px 24px;
 }
 
 .sticky-note {
@@ -15306,16 +15341,16 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
 }
 
 .sidebar-dark .main-sidebar {
-  background-color: #171f29 !important;
+  background-color: var(--primary-surface-dark) !important;
 }
 .sidebar-dark .sidebar-brand-box {
-  background-color: #171f29 !important;
+  background-color: var(--primary-surface-dark) !important;
 }
 .sidebar-dark .sidebar-menu {
-  background-color: #171f29 !important;
+  background-color: var(--primary-surface-dark) !important;
 }
 .sidebar-dark .sidebarTogglerBox {
-  background-color: #171f29 !important;
+  background-color: var(--primary-surface-dark) !important;
 }
 
 .sidebar-light .main-sidebar {
@@ -15356,7 +15391,7 @@ a.btn-primary {
 #datatableRange,
 #datatableRange2 {
   width: 220px;
-  height: 32px; /* I added this class to the input of the date range picker */
+  height: 100%; /* I added this class to the input of the date range picker */
 }
 
 .daterangepicker td.in-range {
@@ -16519,7 +16554,10 @@ button.disabled, button:disabled {
 
 .more-filters {
   border-left: solid 1px #e8eef3;
+  align-content: center;
+  height: 52px;
 }
+
 @media (max-width: 991.98px) {
   .more-filters {
     border-left: 0px;
@@ -17183,7 +17221,7 @@ button.disabled, button:disabled {
 }
 
 .border-bottom-grey {
-  border-bottom: 1px solid #e8eef3;
+  /* border-bottom: 0.6px solid var(--divider); */ /* removed border*/
 }
 
 .border-additional-grey {
@@ -17271,7 +17309,8 @@ button.disabled, button:disabled {
 }
 
 .heading-h3 {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: "Satoshi-Black" !important;
   font-weight: 500;
   line-height: 1.17;
 }
@@ -17372,7 +17411,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 body.dark-theme .card-horizontal {
-  background-color: var(--primary-surface) !important;
+  background-color: var(--primary-surface-dark) !important;
 }
 
 
@@ -17780,7 +17819,8 @@ table.dataTable {
   width: 100%;
   max-height: 100%;
   max-width: 270px;
-  position: fixed;
+  position: sticky;
+  top: 63px;
   white-space: nowrap;
 }
 @media (max-width: 991.98px) {
@@ -17813,11 +17853,11 @@ table.dataTable {
   border-right: 2px solid rgba(40, 49, 60, 0.5215686275);
 }
 .settings-sidebar li.active {
-  background-color: #e8eef3;
+  background: var(--Purple-active-12);
 }
 .settings-sidebar li.active a {
-  color: #28313c;
-  border-right: 2px solid #28313c;
+  color: var(--purple);
+  font-weight: 500;
 }
 
 @media (max-width: 991.98px) {
@@ -17838,7 +17878,7 @@ table.dataTable {
 }
 .settings-box {
   width: 100%;
-  margin-left: 270px;
+  /* margin-left: 270px; */ /* removed this line */
 }
 @media (max-width: 1199.98px) {
   .settings-box {
@@ -18702,6 +18742,8 @@ button {
 /*********** CLIENT LIST **************/
 .client-list-filter .select-box {
   width: auto;
+  height: 52px;
+  align-content: center;
 }
 .client-list-filter .select-box .input-group {
   width: auto;
@@ -19369,27 +19411,27 @@ body.dark-theme .ql-snow .ql-stroke {
   stroke: #D5D8DF;
 }
 body.dark-theme .filter-box, body.dark-theme .table tr td, body.dark-theme .login_header {
-  box-shadow: 0 0.6px 0 0 var(--divider); /* changed from 0 1px 0 0 #4B4E69 to 0 0.6px 0 0 #80808064 - Surface card divider color and tables divider */
+  box-shadow: 0 0.6px 0 0 var(--divider); /* changed from 0 1px 0 0 #4B4E69 to 0 0.6px 0 0 #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .border-right-grey, body.dark-theme .task_view .taskView, body.dark-theme .border-right {
-  border-right: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border-right: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .border-left-grey, body.dark-theme .more-filters, body.dark-theme .daterangepicker.show-ranges.ltr .drp-calendar.left, body.dark-theme .border-left, body.dark-theme .c-inv-btns .dropdown-toggle span {
-  border-left: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border-left: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .border-bottom-grey, body.dark-theme .main-header, body.dark-theme .modal-header, body.dark-theme .modal-body, body.dark-theme .message_wrapper .msg-header, body.dark-theme .border-bottom, body.dark-theme .nav-tabs, body.dark-theme .tabs.--show-secondary .-secondary li {
-  border-bottom: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border-bottom: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .border-top-grey, body.dark-theme .modal-footer, body.dark-theme .more-filters .more-filter-tab.in .clear-all, body.dark-theme .daterangepicker .drp-buttons, body.dark-theme .border-top {
-  border-top: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border-top: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .b-shadow-4, body.dark-theme .qs-datepicker-container, body.dark-theme .form-control, body.dark-theme .w-tables, body.dark-theme .c-inv-desc table tr td, body.dark-theme .border, body.dark-theme .table-bordered, body.dark-theme .c-inv-total .c-inv-total-right td {
   box-shadow: none;
-  border: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown, body.dark-theme .dropdown-menu, body.dark-theme .add-client, body.dark-theme .modal-content, body.dark-theme input, body.dark-theme tbody, body.dark-theme .message_wrapper .msg-content-right .mbl-sender-name, body.dark-theme .more-filters .more-filter-tab, body.dark-theme .daterangepicker {
   background-color: none !important; /* changed from #181C34 to none - Surface surface card background background dyal table ola chi haja dakhl f card */
-  border: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .modal.show {
   background-color: rgba(0, 0, 0, 0.47);
@@ -19398,7 +19440,7 @@ body.dark-theme .menu-collapse:before {
   background: none;
 }
 body.dark-theme .recent-activity .res-activity-list:after {
-  border: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .select-box .date-picker-field, body.dark-theme .select-box .date-picker-field1, body.dark-theme .msg-content-left input {
   border: none !important;
@@ -19409,23 +19451,23 @@ body.dark-theme .close {
 }
 body.dark-theme .table thead th {
   box-shadow: none;
-  border-bottom: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border-bottom: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808048 - Surface card divider color and tables divider */
   color: #D5D8DF !important;
 }
 body.dark-theme .c-inv-disc td, body.dark-theme .inv-num-date tr td, body.dark-theme .inv-detail tr td, body.dark-theme .message_wrapper .msg-content-left, body.dark-theme .message_wrapper, body.dark-theme .message_wrapper .msg-content-left .card, body.dark-theme .message_wrapper .input-group, body.dark-theme .settings-sidebar, body.dark-theme .border-grey, body.dark-theme .ticket-wrapper, body.dark-theme .task-detail-panel, body.dark-theme ul.thumbnails.image_picker_selector li .thumbnail, body.dark-theme .task_view, body.dark-theme .fc-theme-standard .fc-scrollgrid, body.dark-theme .fc-theme-standard td, body.dark-theme .fc-theme-standard th, body.dark-theme .fc .fc-button-primary, body.dark-theme .dropify-wrapper, body.dark-theme .input-group-text, body.dark-theme .fc-theme-standard .fc-list, body.dark-theme .tagify, body.dark-theme .list-group-item {
-  border: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border: 0.6px solid var(--divider) !important; /* changed from 1px solid #4B4E69 to 0.6px solid #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .dash-border-top {
-  border-top: 0.6px dashed var(--divider) !important; /* changed from 1px dashed #4B4E69 to 0.6px dashed #80808064 - Surface card divider color and tables divider */
+  border-top: 0.6px dashed var(--divider) !important; /* changed from 1px dashed #4B4E69 to 0.6px dashed #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .daterangepicker .ranges li.active, body.dark-theme .page-link:hover, body.dark-theme .permisison-table .bg-light, body.dark-theme .w-task-board-box:after {
-  background-color: var(--divider) !important; /* changed from #4B4E69 to #80808064 - Surface card divider color and tables divider */
+  background-color: var(--divider) !important; /* changed from #4B4E69 to #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .ql-toolbar.ql-snow, body.dark-theme .ql-container.ql-snow, body.dark-theme .daterangepicker .calendar-table .next span, body.dark-theme .daterangepicker .calendar-table .prev span {
-  border-color: var(--divider); /* changed from #4B4E69 to #80808064 - Surface card divider color and tables divider */
+  border-color: var(--divider); /* changed from #4B4E69 to #80808048 - Surface card divider color and tables divider */
 }
 body.dark-theme .daterangepicker .calendar-table {
-  border: 0.6px solid var(--divider); /* changed from 1px solid #181c34 to 0.6px solid #80808064 - Surface card divider color and tables divider */
+  border: 0.6px solid var(--divider); /* changed from 1px solid #181c34 to 0.6px solid #80808048 - Surface card divider color and tables divider */
   background-color: #181c34;
 }
 body.dark-theme .page-item.disabled .page-link, body.dark-theme .pagination li a {
@@ -19634,5 +19676,11 @@ body.dark-theme .card-body::-webkit-scrollbar-thumb {
   background-color: #585858;
   border: 3px solid #262f3a;
 }
+
+
+div .select-status {
+  align-content: center; /* I added this class to the dropdown of the type in lead contacnt page */
+}
+
 
 /*# sourceMappingURL=main.css.map*/

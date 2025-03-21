@@ -2,9 +2,9 @@
 <div {{ $attributes->merge(['class' => 'page-title']) }}>
     <div class="page-heading">
         <h2 class="mb-0 pr-3 text-dark f-18 font-weight-bold d-flex align-items-center">
-            <span class="d-inline-block text-truncate mw-300">{{ $pageTitle }}</span>
+            <span class="d-inline-block text-truncate mw-300 mr-3">{{ $pageTitle }}</span>
 
-            <span class="text-lightest f-12 f-w-500 mx-2 mw-250 text-truncate">
+            <span class="text-lightest f-14 f-w-500 mx-2 mw-250 text-truncate">
                 <a href="{{ route('dashboard') }}" class="text-lightest">@lang('app.menu.home')</a> &bull;
                 @php
                     $link = '';
