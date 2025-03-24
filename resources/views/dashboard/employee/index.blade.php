@@ -250,7 +250,7 @@
                         @if (in_array('profile', $activeWidgets))
                         <!-- EMP DASHBOARD INFO START -->
                         <div class="col-md-12 mb-3">
-                            <div class="card border-0 shadow-none mb-3 e-d-info">
+                            <div class="card border-0 shadow-none e-d-info">
                                 <a @if(!in_array('client', user_roles())) href="{{ route('employees.show', user()->id) }}" @endif >
                                     <div class="card-horizontal align-items-center">
                                         <div class="card-img">
