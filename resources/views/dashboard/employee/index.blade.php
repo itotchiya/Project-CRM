@@ -107,7 +107,7 @@
 
             <!-- CLOCK IN CLOCK OUT START -->
             <div
-                class="ml-auto d-flex clock-in-out mb-3 mb-lg-0 mb-md-0 m mt-4 mt-lg-0 mt-md-0 justify-content-end">
+                class="ml-auto d-flex clock-in-out mb-3 mb-lg-0 mb-md-0 m mt-4 mt-lg-0 mt-md-0 justify-content-end align-items-center">
                 <p
                     class="mb-0 text-lg-right text-md-right f-18 font-weight-bold text-dark-grey d-grid align-items-center">
                     <input type="hidden" id="current-latitude" name="current_latitude">
@@ -192,19 +192,19 @@
                 @endif
 
                 @if (!is_null($currentClockIn) && is_null($currentClockIn->clock_out_time) || (!is_null($currentClockIn) && $flagbtn == true))
-                    <button type="button" class="btn-danger rounded f-15 ml-4" id="clock-out"><i
-                            class="icons icon-login mr-2"></i>@lang('modules.attendance.clock_out')</button>
+                    <button type="button" class="btn-danger rounded f-15 ml-4" id="clock-out"><x-lucide-log-out class="icon-small mr-2" />@lang('modules.attendance.clock_out')</button>
+                            
                 @endif
 
                 @if (in_array('admin', user_roles()))
                     <div class="private-dash-settings d-flex align-self-center">
                         <x-form id="privateDashboardWidgetForm" method="POST">
                             <div class="dropdown keep-open">
-                                <a class="d-flex align-items-center justify-content-center dropdown-toggle px-4 text-dark left-3"
+                                <a class="header-icon-box"
                                     type="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
 
                                     aria-expanded="false">
-                                    <i class="fa fa-cog" data-original-title="{{__('modules.dashboard.dashboardWidgetsSettings')}}" data-toggle="tooltip"></i>
+                                    <x-lucide-settings-2 class="icon-small" data-original-title="{{__('modules.dashboard.dashboardWidgetsSettings')}}" data-toggle="tooltip"></x-lucide-user-round-cog>
                                 </a>
                                 <!-- Dropdown - User Information -->
                                 <ul class="dropdown-menu dropdown-menu-right dashboard-settings p-20"
@@ -249,7 +249,7 @@
                     <div class="row">
                         @if (in_array('profile', $activeWidgets))
                         <!-- EMP DASHBOARD INFO START -->
-                        <div class="col-md-12">
+                        <div class="col-md-12 mb-3">
                             <div class="card border-0 shadow-none mb-3 e-d-info">
                                 <a @if(!in_array('client', user_roles())) href="{{ route('employees.show', user()->id) }}" @endif >
                                     <div class="card-horizontal align-items-center">
@@ -308,7 +308,7 @@
                         @endif
 
                         @if (!is_null($myActiveTimer) && in_array('tasks', user_modules()))
-                            <div class="col-sm-12" id="myActiveTimerSection">
+                            <div class="col-sm-12 " id="myActiveTimerSection">
                                 <x-cards.data class="mb-3" :title="__('modules.timeLogs.myActiveTimer')">
                                     <div class="row">
                                         <div class="col-sm-12">
@@ -399,7 +399,7 @@
             <!-- EMP DASHBOARD TASKS PROJECTS EVENTS START -->
             <div class="col-xl-7 col-lg-12 col-md-12 e-d-tasks-projects-events">
                 <!-- EMP DASHBOARD TASKS PROJECTS START -->
-                <div class="row mb-3 mt-xl-0 mt-lg-4 mt-md-4 mt-4">
+                <div class="row mt-xl-0 mt-lg-4 mt-md-4 mt-4">
                     @if (in_array('tasks', $activeWidgets) && (!is_null($viewTaskPermission) && $viewTaskPermission != 'none') && in_array('tasks', user_modules()))
                         <div class="col-md-6 mb-3">
                             <div

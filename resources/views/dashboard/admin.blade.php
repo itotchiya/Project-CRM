@@ -94,10 +94,10 @@ $viewFinanceDashboard = user()->permission('view_finance_dashboard');
                 <div class="admin-dash-settings">
                     <x-form id="dashboardWidgetForm" method="POST">
                         <div class="dropdown keep-open">
-                            <a class="d-flex align-items-center justify-content-center dropdown-toggle px-lg-4 border-left-grey text-dark"
+                            <a class="header-icon-box"
                                type="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                aria-expanded="false">
-                                <i class="fa fa-cog" data-original-title="{{__('modules.dashboard.dashboardWidgetsSettings')}}" data-toggle="tooltip"></i>
+                                <x-lucide-settings-2 class="icon-small" data-original-title="{{__('modules.dashboard.dashboardWidgetsSettings')}}" data-toggle="tooltip"></x-lucide-settings-2>
                             </a>
                             <!-- Dropdown - User Information -->
                             <ul class="dropdown-menu dropdown-menu-right dashboard-settings p-20"

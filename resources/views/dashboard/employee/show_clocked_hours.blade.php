@@ -131,8 +131,7 @@
 
 <div class="modal-footer">
     <button type="button" class="mr-3 rounded btn-cancel" data-dismiss="modal">@lang('app.cancel')</button>
-    <button type="button" onclick="clockOut()" class="rounded btn-danger"><i
-        class="icons icon-login mr-2"></i>@lang('modules.attendance.clock_out')</button>
+    <button type="button" onclick="clockOut()" class="rounded btn-danger"><x-lucide-log-out class="icon-small mr-2" />@lang('modules.attendance.clock_out')</button>
 </div>
 <script>
 

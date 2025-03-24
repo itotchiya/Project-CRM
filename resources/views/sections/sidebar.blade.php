@@ -1,5 +1,5 @@
 <!-- SIDEBAR START -->
-<aside class="{{ !user()->dark_theme ? 'sidebar-' . $appTheme->sidebar_theme : '' }}">
+<aside class="sidebar-light">
     <!-- MOBILE CLOSE SIDEBAR PANEL START -->
     <div class="mobile-close-sidebar-panel w-100 h-100" onclick="closeMobileMenu()" id="mobile_close_panel"></div>
     <!-- MOBILE CLOSE SIDEBAR PANEL END -->
@@ -67,7 +67,7 @@
                     </a>
                     <a href="{{ route('profile-settings.index') }}" data-toggle="tooltip"
                         data-original-title="{{ __('app.menu.profileSettings') }}">
-                            <i class="side-icon bi bi-pencil-square"></i>
+                            <x-lucide-user-round-cog class="icon-small" />
                     </a>
                 </div>
 
@@ -75,7 +75,7 @@
                     <a class="dropdown-item d-flex justify-content-between align-items-center f-15 text-dark invite-member"
                         href="javascript:;">
                         <span>@lang('app.inviteMember') {{ $companyName }}</span>
-                        <i class="side-icon bi bi-person-plus"></i>
+                        <x-lucide-user-round-plus class="icon-small" />
                     </a>
                 @endif
 

@@ -54,6 +54,7 @@
         "macellan/laravel-zip": "^1.0",
         "macsidigital/laravel-zoom": "8.0.1",
         "mailchimp/marketing": "^3.0",
+        "mallardduck/blade-lucide-icons": "^1.23",
         "mitchbred/entrust": "^2.1",
         "mollie/laravel-mollie": "^2.0",
         "nwidart/laravel-modules": "10.0.6",

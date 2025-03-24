@@ -46,7 +46,7 @@
             <li data-toggle="tooltip" data-placement="top" title="{{__('app.search')}}" class="d-none d-sm-block">
                 <div class="d-flex align-items-center">
                     <a href="javascript:;" class="d-block header-icon-box open-search">
-                        <i class="fa fa-search f-16 text-dark-grey"></i>
+                        <x-lucide-search class="icon-small" />
                     </a>
                 </div>
             </li>
@@ -55,7 +55,7 @@
             <li data-toggle="tooltip" data-placement="top" title="{{__('app.menu.stickyNotes')}}" class="d-none d-sm-block">
                 <div class="d-flex align-items-center">
                     <a href="{{ route('sticky-notes.index') }}" class="d-block header-icon-box openRightModal">
-                        <i class="fa fa-sticky-note f-16 text-dark-grey"></i>
+                        <x-lucide-sticky-note class="icon-small" />
                     </a>
                 </div>
             </li>
@@ -69,7 +69,7 @@
                         <div class="add_box dropdown">
                             <a class="d-block dropdown-toggle header-icon-box" type="link" id="show-active-timer"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-clock f-16 text-dark-grey"></i>
+                                <x-lucide-clock class="icon-small" />
                                     <span
                                         class="badge badge-primary active-timer-count position-absolute {{ ($activeTimerCount == 0) ? 'd-none' : '' }}">{{ $activeTimerCount }}</span>
                             </a>
@@ -94,14 +94,14 @@
                     <div class="add_box dropdown">
                         <a class="d-block dropdown-toggle header-icon-box" type="link" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-plus-circle f-16 text-dark-grey"></i>
+                            <x-lucide-plus-circle class="icon-small" />
                         </a>
                         <!-- DROPDOWN - INFORMATION -->
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink" tabindex="0">
                             @if (in_array('projects', user_modules()) && (add_project_permission() == 'all' || add_project_permission() == 'added'))
                                 <a class="dropdown-item f-14 text-dark openRightModal"
                                    href="{{ route('projects.create') }}">
-                                    <i class="fa fa-plus f-w-500 mr-2 f-11"></i>
+                                    <x-lucide-plus class="icon-small" />
                                     @lang('app.addProject')
                                 </a>
                             @endif
@@ -109,7 +109,7 @@
                             @if (in_array('tasks', user_modules()) && (add_tasks_permission() == 'all' || add_tasks_permission() == 'added'))
                                 <a class="dropdown-item f-14 text-dark openRightModal"
                                    href="{{ route('tasks.create') }}">
-                                    <i class="fa fa-plus f-w-500 mr-2 f-11"></i>
+                                    <x-lucide-plus class="icon-small" />
                                     @lang('app.addTask')
                                 </a>
                             @endif
@@ -117,7 +117,7 @@
                             @if (in_array('clients', user_modules()) && (add_clients_permission() == 'all' || add_clients_permission() == 'added'))
                                 <a class="dropdown-item f-14 text-dark openRightModal"
                                    href="{{ route('clients.create') }}">
-                                    <i class="fa fa-plus f-w-500 mr-2 f-11"></i>
+                                    <x-lucide-plus class="icon-small" />
                                     @lang('app.addClient')
                                 </a>
                             @endif
@@ -125,7 +125,7 @@
                             @if (in_array('employees', user_modules()) && (add_employees_permission() == 'all' || add_employees_permission() == 'added'))
                                 <a class="dropdown-item f-14 text-dark openRightModal"
                                    href="{{ route('employees.create') }}">
-                                    <i class="fa fa-plus f-w-500 mr-2 f-11"></i>
+                                    <x-lucide-plus class="icon-small" />
                                     @lang('app.addEmployee')
                                 </a>
                             @endif
@@ -133,7 +133,7 @@
                             @if (in_array('payments', user_modules()) && (add_payments_permission() == 'all' || add_payments_permission() == 'added'))
                                 <a class="dropdown-item f-14 text-dark openRightModal"
                                    href="{{ route('payments.create') }}">
-                                    <i class="fa fa-plus f-w-500 mr-2 f-11"></i>
+                                    <x-lucide-plus class="icon-small" />
                                     @lang('modules.payments.addPayment')
                                 </a>
                             @endif
@@ -141,7 +141,7 @@
                             @if (in_array('tickets', user_modules()) && (add_tickets_permission() == 'all' || add_tickets_permission() == 'added'))
                                 <a class="dropdown-item f-14 text-dark openRightModal"
                                    href="{{ route('tickets.create') }}">
-                                    <i class="fa fa-plus f-w-500 mr-2 f-11"></i>
+                                    <x-lucide-plus class="icon-small" />
                                     @lang('modules.tickets.addTicket')
                                 </a>
                             @endif
@@ -156,7 +156,7 @@
                 <div class="notification_box dropdown">
                     <a class="d-block dropdown-toggle header-icon-box show-user-notifications" type="link"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-bell f-16 text-dark-grey"></i>
+                        <x-lucide-bell class="icon-small" />
                         @if ($unreadNotificationCount > 0)
                             <span
                                 class="badge badge-primary unread-notifications-count active-timer-count position-absolute">{{ $unreadNotificationCount }}</span>
@@ -199,13 +199,14 @@
                 <div class="logout_box">
                     <a class="d-block header-icon-box" href="javascript:;" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
-                        <i class="fa fa-power-off f-16 text-dark-grey"></i>
+                        <x-lucide-power class="icon-small" />
                     </a>
                 </div>
             </li>
             <!-- LOGOUT END -->
         </ul>
     </div>
+    
     <!-- NAVBAR RIGHT(SEARCH, ADD, NOTIFICATION, LOGOUT) START-->
 </header>
 <!-- HEADER END -->

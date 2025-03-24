@@ -38,7 +38,7 @@
                 <div class="input-group bg-grey rounded">
                     <div class="input-group-prepend">
                         <span class="input-group-text border-0 bg-additional-grey">
-                            <i class="fa fa-search f-13 text-dark-grey"></i>
+                            <x-lucide-search class="icon-small" />
                         </span>
                     </div>
                     <input type="text" class="form-control f-14 p-1 border-additional-grey" id="search-text-field"
@@ -209,10 +209,10 @@
 
             <div class="btn-group mt-2 mt-lg-0 mt-md-0 ml-0 ml-lg-3 ml-md-3" role="group">
                 <a href="{{ route('clients.index') }}" class="btn btn-secondary f-14 btn-active show-clients" data-toggle="tooltip"
-                    data-original-title="@lang('app.menu.clients')"><i class="side-icon bi bi-list-ul"></i></a>
+                    data-original-title="@lang('app.menu.clients')"><x-lucide-list class="icon-small" /></a>
 
                 <a href="javascript:;" class="btn btn-secondary f-14 show-unverified" data-toggle="tooltip"
-                    data-original-title="@lang('modules.dashboard.verificationPending')"><i class="side-icon bi bi-person-x"></i></a>
+                    data-original-title="@lang('modules.dashboard.verificationPending')"><x-lucide-user-round-x class="icon-small" /></a>
             </div>
 
         </div>

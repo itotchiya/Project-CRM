@@ -14,6 +14,8 @@ namespace PHPSTORM_META {
     override(new \Illuminate\Contracts\Container\Container, map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,
@@ -330,6 +332,8 @@ namespace PHPSTORM_META {
     override(\Illuminate\Container\Container::makeWith(0), map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,
@@ -646,6 +650,8 @@ namespace PHPSTORM_META {
     override(\Illuminate\Contracts\Container\Container::get(0), map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,
@@ -962,6 +968,8 @@ namespace PHPSTORM_META {
     override(\Illuminate\Contracts\Container\Container::make(0), map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,
@@ -1278,6 +1286,8 @@ namespace PHPSTORM_META {
     override(\Illuminate\Contracts\Container\Container::makeWith(0), map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,
@@ -1594,6 +1604,8 @@ namespace PHPSTORM_META {
     override(\App::get(0), map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,
@@ -1910,6 +1922,8 @@ namespace PHPSTORM_META {
     override(\App::make(0), map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,
@@ -2226,6 +2240,8 @@ namespace PHPSTORM_META {
     override(\App::makeWith(0), map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,
@@ -2542,6 +2558,8 @@ namespace PHPSTORM_META {
     override(\app(0), map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,
@@ -2858,6 +2876,8 @@ namespace PHPSTORM_META {
     override(\resolve(0), map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,
@@ -3174,6 +3194,8 @@ namespace PHPSTORM_META {
     override(\Psr\Container\ContainerInterface::get(0), map([
         '' => '@',
             'Billow\Contracts\PaymentProcessor' => \Billow\Payfast::class,
+            'BladeUI\Icons\Factory' => \BladeUI\Icons\Factory::class,
+            'BladeUI\Icons\IconsManifest' => \BladeUI\Icons\IconsManifest::class,
             'Craftsys\Msg91\Client' => \Craftsys\Msg91\Client::class,
             'Edujugon\PushNotification\PushNotification' => \Edujugon\PushNotification\PushNotification::class,
             'Froiden\RestAPI\Routing\ApiResourceRegistrar' => \Froiden\RestAPI\Routing\ApiResourceRegistrar::class,

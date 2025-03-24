@@ -1,6 +1,6 @@
 @if (in_array('leave', $activeWidgets) && $sidebarUserPermissions['view_leave'] != 5 && $sidebarUserPermissions['view_leave'] != 'none' && in_array('employees', user_modules()))
     <!-- EMP DASHBOARD BIRTHDAY START -->
-    <div class="col-sm-12">
+    <div class="col-sm-12 mb-3">
         <x-cards.data class="e-d-info mb-2" :title="__('modules.dashboard.leave')" padding="false" otherClasses="h-200">
             <x-table>
                 @forelse ($leave as $totalLeave)

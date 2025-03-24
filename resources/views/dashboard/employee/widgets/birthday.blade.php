@@ -1,6 +1,6 @@
 @if (in_array('birthday', $activeWidgets) && in_array('employees', user_modules()))
     <!-- EMP DASHBOARD BIRTHDAY START -->
-    <div class="col-sm-12">
+    <div class="col-sm-12 mb-3">
         <x-cards.data class="e-d-info mb-2" :title="__('modules.dashboard.birthday')" padding="false"
                       otherClasses="h-200">
             <x-table>

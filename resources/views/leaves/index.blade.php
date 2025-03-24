@@ -35,7 +35,7 @@ $approveRejectPermission = user()->permission('approve_or_reject_leaves');
                 <div class="input-group bg-grey rounded">
                     <div class="input-group-prepend">
                         <span class="input-group-text border-0 bg-additional-grey">
-                            <i class="fa fa-search f-13 text-dark-grey"></i>
+                            <x-lucide-search class="icon-small" />
                         </span>
                     </div>
                     <input type="text" class="form-control f-14 p-1 border-additional-grey" id="search-text-field"
