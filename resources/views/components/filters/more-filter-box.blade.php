@@ -5,11 +5,9 @@
 
     <div class="more-filters py-2 pl-0 pl-lg-2 pl-md-2 position-relative">
 
-        <a onclick="openMoreFilter()" class="mb-0 d-none d-lg-block  f-14 text-dark-grey"><i
-                class="fa fa-filter f-13 text-dark-grey mt-1 mr-1"></i>@lang('app.moreFilters')</a>
+        <a onclick="openMoreFilter()" class="mb-0 d-none d-lg-block  f-14 text-dark-grey"><x-lucide-filter class="icon-small" /> @lang('app.moreFilters')</a>
 
-        <a onclick="openMoreFilter()" class="mb-0 d-block d-lg-none  text-dark-grey"><i
-                class="fa fa-filter filter_icon mr-2"></i>@lang('app.moreFilters')</a>
+        <a onclick="openMoreFilter()" class="mb-0 d-block d-lg-none  text-dark-grey"><x-lucide-filter class="icon-small" /> @lang('app.moreFilters')</a>
 
         <div class="more-filter-tab" id="more_filter">
             <div class="filter-inner">

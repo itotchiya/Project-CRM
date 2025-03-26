@@ -299,7 +299,7 @@
 } */
 
 .is-selected{
-  background-color: var(--purple) !important;
+  background-color: var(--primary) !important;
   color: #fff !important;
 }
 
