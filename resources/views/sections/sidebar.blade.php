@@ -49,7 +49,7 @@
                 @endif
             </div>
             <!-- DROPDOWN - INFORMATION -->
-            <div class="dropdown-menu dropdown-menu-right sidebar-brand-dropdown ml-3"
+            <div class="dropdown-menu dropdown-menu-right sidebar-brand-dropdown ml-2"
                 aria-labelledby="dropdownMenuLink" tabindex="0">
                 <div class="d-flex justify-content-between align-items-center profile-box">
                     <a @if(!in_array('client', user_roles())) href="{{ route('employees.show', user()->id) }}" @endif >
@@ -59,17 +59,20 @@
                                         alt="{{ $userName }}">
                                 </div>
                                 <div class="ProfileData">
-                                    <h3 class="f-15 f-w-500 text-dark" data-placement="bottom" data-toggle="tooltip"
-                                        data-original-title="{{ $userName }}">{{ $userName }}</h3>
+                                    <span class="f-15 f-w-500 profile-data" data-placement="bottom" data-toggle="tooltip"
+                                        data-original-title="{{ $userName }}">{{ $userName }}</span>
                                     <p class="mb-0 f-12 text-dark-grey">{{ user()->employeeDetail->designation->name ?? '' }}</p>
                                 </div>
                         </div>
                     </a>
-                    <a href="{{ route('profile-settings.index') }}" data-toggle="tooltip"
-                        data-original-title="{{ __('app.menu.profileSettings') }}">
-                            <x-lucide-user-round-cog class="icon-small" />
-                    </a>
+                    <x-lucide-arrow-right class="icon-small " />
                 </div>
+
+                <a class="dropdown-item d-flex justify-content-between align-items-center f-15 text-dark"
+                    href="{{ route('profile-settings.index') }}">
+                    <span>{{ __('app.menu.profileSettings') }}</span>
+                    <x-lucide-user-round-cog class="icon-small" />
+                </a>
 
                 @if (!in_array('client', user_roles()) && ($sidebarUserPermissions['add_employees'] == 4 || $sidebarUserPermissions['add_employees'] == 1) && in_array('employees', user_modules()))
                     <a class="dropdown-item d-flex justify-content-between align-items-center f-15 text-dark invite-member"
