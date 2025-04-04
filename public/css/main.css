@@ -1063,6 +1063,8 @@
   --base-black-hover: #121212;
   --base-white: #c5c5c5;
   --base-white-hover: #fff;
+  --base-gray: #7a7988;
+  --base-gray-hover: #505050;
 
 
   /* Text Colors */
@@ -1186,6 +1188,11 @@ body {
 .icon-small {
   width: 18px; /* Adjust width as needed */
   height: 18px; /* Adjust height as needed */
+}
+
+.nav-item-icon {
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
 }
 
 .icon-btn {
@@ -15141,8 +15148,8 @@ body.dark-theme .bg-additional-grey {
 }
 
 .sidebar-toggled .preloader-container {
-  margin-left: 60px;
-  width: calc(100% - 60px);
+  margin-left: 72px;
+  width: calc(100% - 72px);
 }
 
 .rtl .preloader-container {
@@ -15548,13 +15555,25 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
   color: var(--base-black);
 }
 
+.sidebar-light .sidebar-menu li .nav-item:hover {
+  background-color: var(--overlay-hover);
+  color: var(--base-black-hover);
+}
+
 .sidebar-light .accordionItem a.active {
   width: 100%;
-  color: var(--primary);
+  color: var(--main-black);
+  background-color: var(--overlay-active);
+  font-weight: 600;
+}
+
+.sidebar-light .accordionItem a.active:hover {
+  background-color: var(--overlay-active-hover);
+  color: var(--base-black-hover);
 }
 
 .sidebar-light .sidebarTogglerBox {
-  background-color: none;
+  background-color: var(--surface);
   border-top: 0.6px solid var(--divider-light);
   border-right: 0.6px solid var(--divider-light);
 }
@@ -17069,11 +17088,12 @@ body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown a.dropdown-item:hover
   transform: scaleY(1);
   transform-origin: top;
   box-sizing: border-box;
+  margin-bottom: 24px;
 }
 
 .accordionItem a.active {
   color: var(--primary);
-  font-weight: 600;
+
 }
 
 .sidebar-menu {
@@ -17093,15 +17113,16 @@ body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown a.dropdown-item:hover
   position: relative;
 }
 .sidebar-menu li .accordionItemContent a {
-  
-  padding: 0.5rem 1.2rem;
+  font-family: monospace;
+  padding: 0.6rem 1.2rem;
   display: block;
   white-space: nowrap;
-  margin-left: 36px;
+  margin-left: 34px;
+  border-left: 0.6px solid var(--divider-light);
 }
 .sidebar-menu li .accordionItemContent a:hover {
-  font-weight: 600;
-  color: var(--primary-gray1-hover) !important;
+  background-color: var(--overlay-hover);
+  color: var(--base-black-hover) !important;
 }
 
 
@@ -17109,16 +17130,11 @@ body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown a.dropdown-item:hover
   line-height: 1.87;
   white-space: nowrap;
   display: block;
-  color: var(--warning-text);
-  width: 230px;
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   align-items: center;
-  padding: 10px 20px 10px 20px;
-}
-.sidebar-menu li .nav-item:focus, .sidebar-menu li .nav-item:hover {
-  font-weight: 700;
-  color: var(--primary-black) !important;
+  padding: 12px 24px;
 }
 
 .side-icon {
@@ -17204,15 +17220,15 @@ body.dark-theme .sidebar-brand-box .sidebar-brand-dropdown a.dropdown-item:hover
   content: "\f054";
 }
 .sidebar-toggled .main-header {
-  margin-left: 60px;
+  margin-left: 72px;
   transition: width 0.3s ease-in-out;
 }
 .sidebar-toggled .main-container {
-  margin-left: 60px;
+  margin-left: 72px;
   transition: width 0.3s ease-in-out;
 }
 .sidebar-toggled .sidebarTogglerBox, .sidebar-toggled .main-sidebar {
-  width: 3.77rem !important;
+  width: 4.5rem  !important;
   transition: width 0.3s;
   background-color: var(--surface);
 }
@@ -17481,7 +17497,7 @@ body.dark-theme .text-darkest-grey:hover {
 }
 
 .text-lightest {
-  color: #99A5B5;
+  color: var(--base-gray);
 }
 
 .text-blue {
